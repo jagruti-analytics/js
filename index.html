@@ -69,13 +69,18 @@ footer { background: #142131; border-top-color: var(--line); }
 .image-dialog p{color:#b7c5d5;font-size:.8rem;margin:.55rem 0 0}
 @media(max-width:760px){.projects{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.shot-button img{transition:none}}
+
+/* Updated professional portrait presentation */
+.hero-grid{grid-template-columns:minmax(0,1fr) 300px}
+.hero .portrait{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:14px;border:2px solid rgba(45,212,191,.5);background:#10283b;box-shadow:0 20px 55px rgba(0,0,0,.4),0 0 30px rgba(20,184,166,.12)}
+@media(max-width:760px){.hero-grid{grid-template-columns:1fr}.hero .portrait{max-width:280px;margin:0 auto}}
 </style>
 </head>
 <body>
 <nav aria-label="Main"><div class="wrap"><strong>Jagruti Shete | Data Analyst &amp; Business Analyst</strong><ul><li><a href="#career">Career</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#approach">Approach</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
 <header class="hero"><div class="wrap"><div class="hero-grid"><div><h1>Turning data into insights. Turning insights into business decisions.</h1><p class="lead">I'm Jagruti, a London-based Data Analyst and Business Analyst with 5+ years of experience transforming complex data and business requirements into actionable insights. I specialise in Power BI, SQL reporting, stakeholder engagement and requirements analysis, with experience across banking, financial services, insurance, procurement and operations. I'm currently pursuing an MSc in Business Analytics.</p><p class="proof">Microsoft Certified: Power BI Data Analyst Associate (PL-300) | 45+ dashboards developed across BFSI, workforce management, procurement and operations | 8 enterprise procurement clients supported.</p><div class="actions"><a class="btn primary" href="#projects">See my dashboards</a><a class="btn ghost" href="#contact">Get in touch</a></div></div>
-<!-- Upload your photo as images/jagruti.jpg. If uploaded to the root instead, change src to jagruti.jpg. -->
-<img class="portrait" src="images/jagruti.jpg" alt="Photo of Jagruti Shete" onerror="this.parentNode.classList.add('no-photo');this.remove()"></div></div></header>
+<!-- Portrait stored in the images folder; filename is case-sensitive. -->
+<img class="portrait" src="images/Polished Analytics Professional Portrait.png" alt="Jagruti Shete – Data Analyst and Business Analyst" loading="eager" decoding="async" onerror="this.parentNode.classList.add('no-photo');this.remove()"></div></div></header>
 <section id="career"><div class="wrap"><h2>My career, charted</h2><p class="intro">Each bar is a role or course of study, drawn to scale. Hover over a bar to see the dates. Latest start dates appear first.</p><div class="chart" aria-label="Career timeline with the latest roles listed first"><div class="axis" id="axis" aria-hidden="true"></div><div id="rows"></div></div></div></section>
 <section id="projects"><div class="wrap"><h2>Dashboards and analysis</h2><p class="intro">Explore examples of the analytical challenges I work on across sustainability, public procurement, workforce management, operations and financial services. Select any image to view it larger.</p><p class="portfolio-disclaimer"><strong>Portfolio note:</strong> The dashboard images below are visual recreations using illustrative data, not screenshots of confidential client reports. They show example layouts and analytical approaches; the figures are not validated research findings.</p><div class="projects"><article class="project">
   <button class="shot shot-button" type="button" data-image="images/agricultural-waste.png" data-title="Agricultural waste &amp; sustainability analytics" aria-label="View larger image: Agricultural waste &amp; sustainability analytics">
