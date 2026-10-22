@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -272,48 +273,52 @@ html{scroll-padding-top:105px}
 @media(max-width:560px){.career-stats{grid-template-columns:1fr}.career-stat{padding:1rem 1.2rem}.career-heading-mark{display:none}.career-role-list,.career-details{padding:1rem}}
 @media(prefers-reduced-motion:reduce){.career-choice{transition:none}}
 
+
+/* Business Analytics Showcase – five screenshots in responsive cards */
+#category-business-showcase .projects {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
+@media(max-width:650px){#category-business-showcase .projects{grid-template-columns:1fr}}
 </style>
 </head>
 <body id="top">
 <!-- Published design version: PORTFOLIO DESIGN V3 — enlarged header and hero -->
-<nav class="site-nav" aria-label="Main navigation">
-  <div class="wrap nav-shell">
-    <a class="nav-brand" href="#top" aria-label="Jagruti Shete — back to top">
-      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-      <span class="brand-copy"><strong>Jagruti Shete</strong><small>Data Analyst &amp; Business Analyst</small></span>
-    </a>
-    <div class="nav-center">
-      <a href="#career">Career</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
-    </div>
-    <div class="nav-right">
-      <span class="nav-badge"><span class="badge-dot" aria-hidden="true"></span>Open to UK Analyst Roles</span>
-      <a class="nav-cta" href="#projects">View Dashboards <span aria-hidden="true">↗</span></a>
-    </div>
-  </div>
+<nav aria-label="Main navigation" class="site-nav">
+<div class="wrap nav-shell">
+<a aria-label="Jagruti Shete — back to top" class="nav-brand" href="#top">
+<span aria-hidden="true" class="brand-mark"><span></span><span></span><span></span></span>
+<span class="brand-copy"><strong>Jagruti Shete</strong><small>Data Analyst &amp; Business Analyst</small></span>
+</a>
+<div class="nav-center">
+<a href="#career">Career</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
+</div>
+<div class="nav-right">
+<span class="nav-badge"><span aria-hidden="true" class="badge-dot"></span>Open to UK Analyst Roles</span>
+<a class="nav-cta" href="#projects">View Dashboards <span aria-hidden="true">↗</span></a>
+</div>
+</div>
 </nav>
 <header class="hero"><div class="wrap"><div class="hero-grid"><div><h1>Turning data into insights. Turning insights into business decisions.</h1><p class="lead">I'm Jagruti, a London-based Data Analyst and Business Analyst with 5+ years of experience transforming complex data and business requirements into actionable insights. I specialise in Power BI, SQL reporting, stakeholder engagement and requirements analysis, with experience across banking, financial services, insurance, procurement and operations. I'm currently pursuing an MSc in Business Analytics.</p><p class="proof">Microsoft Certified: Power BI Data Analyst Associate (PL-300) | 45+ dashboards developed across BFSI, workforce management, procurement and operations | 8 enterprise procurement clients supported.</p><div class="actions"><a class="btn primary" href="#projects">See my dashboards</a><a class="btn ghost" href="#contact">Get in touch</a></div></div>
 <!-- Professional portrait uploaded to GitHub images folder -->
 <img alt="Jagruti Shete – Data Analyst and Business Analyst" class="portrait" decoding="async" loading="eager" src="images/Polished%20Analytics%20Professional%20Portrait.png"/></div></div></header>
-<section id="career" class="career-section">
-  <div class="wrap career-wrap">
-    <div class="career-heading"><div><span class="career-kicker">PROFESSIONAL EXPERIENCE</span><h2>My Career, Analysed</h2><p class="intro">Explore my experience across data analytics and business analysis. Select an organisation to see key achievements and tools.</p></div><span class="career-heading-mark" aria-hidden="true">▥</span></div>
-    <div class="career-stats" aria-label="Career highlights">
-      <div class="career-stat"><strong>5+</strong><span>Years of experience</span></div>
-      <div class="career-stat"><strong>45+</strong><span>Dashboards developed</span></div>
-      <div class="career-stat"><strong>8</strong><span>Enterprise clients supported</span></div>
-    </div>
-    <div class="career-explorer">
-      <div class="career-role-list" role="group" aria-label="Choose an organisation"><p class="career-list-label">SELECT AN EXPERIENCE</p><div id="career-options"></div></div>
-      <article id="career-details" class="career-details" aria-live="polite" aria-atomic="true">
-        <div class="career-details-top"><span class="career-details-kicker">EXPERIENCE DETAILS</span><span id="career-date"></span></div>
-        <h3 id="career-title"></h3><p id="career-company" class="career-company"></p>
-        <div class="career-detail-block"><h4>Key contribution</h4><p id="career-achievement"></p></div>
-        <div class="career-detail-block"><h4>Tools &amp; capabilities</h4><div id="career-tools" class="career-tool-tags"></div></div>
-      </article>
-    </div>
-  </div>
+<section class="career-section" id="career">
+<div class="wrap career-wrap">
+<div class="career-heading"><div><span class="career-kicker">PROFESSIONAL EXPERIENCE</span><h2>My Career, Analysed</h2><p class="intro">Explore my experience across data analytics and business analysis. Select an organisation to see key achievements and tools.</p></div><span aria-hidden="true" class="career-heading-mark">▥</span></div>
+<div aria-label="Career highlights" class="career-stats">
+<div class="career-stat"><strong>5+</strong><span>Years of experience</span></div>
+<div class="career-stat"><strong>45+</strong><span>Dashboards developed</span></div>
+<div class="career-stat"><strong>8</strong><span>Enterprise clients supported</span></div>
+</div>
+<div class="career-explorer">
+<div aria-label="Choose an organisation" class="career-role-list" role="group"><p class="career-list-label">SELECT AN EXPERIENCE</p><div id="career-options"></div></div>
+<article aria-atomic="true" aria-live="polite" class="career-details" id="career-details">
+<div class="career-details-top"><span class="career-details-kicker">EXPERIENCE DETAILS</span><span id="career-date"></span></div>
+<h3 id="career-title"></h3><p class="career-company" id="career-company"></p>
+<div class="career-detail-block"><h4>Key contribution</h4><p id="career-achievement"></p></div>
+<div class="career-detail-block"><h4>Tools &amp; capabilities</h4><div class="career-tool-tags" id="career-tools"></div></div>
+</article>
+</div>
+</div>
 </section>
-<section id="projects"><div class="wrap"><div class="portfolio-workspace"><div class="portfolio-left"><h2>Dashboards and analysis</h2><p class="intro">Explore six dashboard projects by analytics area. Select a category to see its dashboard previews and project details.</p><p class="portfolio-disclaimer"><strong>Portfolio note:</strong> The dashboard images below are visual recreations using illustrative data, not screenshots of confidential client reports. They show example layouts and analytical approaches; the figures are not validated research findings.</p><div aria-label="Dashboard categories" class="category-tiles" role="group"><button aria-controls="category-sustainability" aria-expanded="true" class="category-tile is-selected" data-category="sustainability" type="button"><span aria-hidden="true" class="category-tile-icon">◈</span><span class="category-tile-content"><strong>Sustainability &amp; Public Sector</strong><span class="category-tile-description">Agricultural waste and UK procurement opportunities</span><span class="category-tile-count">02 projects</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-workforce" aria-expanded="false" class="category-tile" data-category="workforce" type="button"><span aria-hidden="true" class="category-tile-icon">▥</span><span class="category-tile-content"><strong>Workforce &amp; Operations</strong><span class="category-tile-description">People analytics and operational efficiency</span><span class="category-tile-count">02 projects</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-procurement" aria-expanded="false" class="category-tile" data-category="procurement" type="button"><span aria-hidden="true" class="category-tile-icon">▤</span><span class="category-tile-content"><strong>Procurement Analytics</strong><span class="category-tile-description">Spend, suppliers and contract performance</span><span class="category-tile-count">01 project</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-bfsi" aria-expanded="false" class="category-tile" data-category="bfsi" type="button"><span aria-hidden="true" class="category-tile-icon">◉</span><span class="category-tile-content"><strong>BFSI Analytics</strong><span class="category-tile-description">Banking, financial services and insurance insights</span><span class="category-tile-count">01 project</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button></div><section aria-label="Sustainability &amp; Public Sector" class="category-panel" id="category-sustainability"><div class="category-panel-heading"><h3>Sustainability &amp; Public Sector</h3><p>Select a screenshot to view the full-size dashboard.</p></div><div class="projects"><article class="project">
+<section id="projects"><div class="wrap"><div class="portfolio-workspace"><div class="portfolio-left"><h2>Dashboards and analysis</h2><p class="intro">Explore eleven portfolio dashboard concepts by analytics area. Select a category to see previews and project details.</p><p class="portfolio-disclaimer"><strong>Portfolio note:</strong> The dashboard images below are visual recreations using illustrative data, not screenshots of confidential client reports. They show example layouts and analytical approaches; the figures are not validated research findings.</p><div aria-label="Dashboard categories" class="category-tiles" role="group"><button aria-controls="category-sustainability" aria-expanded="true" class="category-tile is-selected" data-category="sustainability" type="button"><span aria-hidden="true" class="category-tile-icon">◈</span><span class="category-tile-content"><strong>Sustainability &amp; Public Sector</strong><span class="category-tile-description">Agricultural waste and UK procurement opportunities</span><span class="category-tile-count">02 projects</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-workforce" aria-expanded="false" class="category-tile" data-category="workforce" type="button"><span aria-hidden="true" class="category-tile-icon">▥</span><span class="category-tile-content"><strong>Workforce &amp; Operations</strong><span class="category-tile-description">People analytics and operational efficiency</span><span class="category-tile-count">02 projects</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-procurement" aria-expanded="false" class="category-tile" data-category="procurement" type="button"><span aria-hidden="true" class="category-tile-icon">▤</span><span class="category-tile-content"><strong>Procurement Analytics</strong><span class="category-tile-description">Spend, suppliers and contract performance</span><span class="category-tile-count">01 project</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-bfsi" aria-expanded="false" class="category-tile" data-category="bfsi" type="button"><span aria-hidden="true" class="category-tile-icon">◉</span><span class="category-tile-content"><strong>BFSI Analytics</strong><span class="category-tile-description">Banking, financial services and insurance insights</span><span class="category-tile-count">01 project</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-business-showcase" aria-expanded="false" class="category-tile" data-category="business-showcase" type="button"><span aria-hidden="true" class="category-tile-icon">▦</span><span class="category-tile-content"><strong>Business Analytics Showcase</strong><span class="category-tile-description">Customer, sales, healthcare, marketing and logistics</span><span class="category-tile-count">05 projects</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button></div><section aria-label="Sustainability &amp; Public Sector" class="category-panel" id="category-sustainability"><div class="category-panel-heading"><h3>Sustainability &amp; Public Sector</h3><p>Select a screenshot to view the full-size dashboard.</p></div><div class="projects"><article class="project">
 <button aria-label="View larger image: Agricultural waste &amp; sustainability analytics" class="shot shot-button" data-image="images/agricultural-waste.png" data-title="Agricultural waste &amp; sustainability analytics" type="button">
 <img alt="Illustrative Agricultural waste &amp; sustainability analytics dashboard design with sample figures" loading="lazy" src="images/agricultural-waste.png"/>
 <span class="expand-hint">View full image ↗</span>
@@ -379,47 +384,47 @@ html{scroll-padding-top:105px}
 <dl><dt>Business question</dt><dd>How do revenue, customer activity and insurance claims vary across products and regions?</dd><dt>Focus / finding</dt><dd>Bring customer, product and claims metrics into a single view to identify trends and areas for deeper analysis.</dd><dt>Data &amp; tools</dt><dd>Power BI · BFSI KPIs · Illustrative BFSI dashboard</dd></dl>
 <p class="sample-note">Portfolio visualisation using illustrative data — not a client report.</p>
 </div>
-</article></div></section></div>
-<aside class="trends-sidebar" aria-labelledby="trends-title">
-  <div class="trends-title-row"><span class="trends-indicator" aria-hidden="true"></span><span class="trend-eyebrow">INDUSTRY WATCH</span></div>
-  <h2 id="trends-title">Current Analytics Trends</h2>
-  <p class="trends-intro">What's changing across business intelligence, AI-powered analytics and modern data platforms.</p>
-  <div class="trends-updated">Curated articles · October 2026</div>
-  <div class="trend-articles">
-    <article class="trend-article">
-      <div class="trend-meta"><span>MICROSOFT POWER BI</span><time datetime="2026-10">OCT 2026</time></div>
-      <h3>Power BI adds AI authoring and new reporting features</h3>
-      <p>The October release introduces natural-language support for custom visuals and a Gantt chart preview, alongside semantic-model improvements.</p>
-      <a href="https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-october-2026-feature-summary/5374650" target="_blank" rel="noopener noreferrer">Read official update <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="trend-article">
-      <div class="trend-meta"><span>GOOGLE CLOUD</span><time datetime="2026-09-14">14 SEP 2026</time></div>
-      <h3>AI agents move closer to self-service data analysis</h3>
-      <p>BigQuery's augmented analytics functions help analysts investigate changes in metrics and explore drivers directly in SQL.</p>
-      <a href="https://cloud.google.com/blog/products/data-analytics/bigquery-augmented-analytics-tvfs" target="_blank" rel="noopener noreferrer">Read Google Cloud blog <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="trend-article">
-      <div class="trend-meta"><span>MICROSOFT POWER BI</span><time datetime="2026-09">SEP 2026</time></div>
-      <h3>Semantic-model governance and redesigned analytics workflows</h3>
-      <p>September's Power BI update covers Copilot access controls, a refreshed Power Query editor preview and modern report design tools.</p>
-      <a href="https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-september-2026-feature-summary/5325831" target="_blank" rel="noopener noreferrer">Explore September update <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="trend-article">
-      <div class="trend-meta"><span>GOOGLE DATA CLOUD</span><time datetime="2026-09-10">10 SEP 2026</time></div>
-      <h3>AI and data platforms are becoming more connected</h3>
-      <p>Google's data cloud roundup tracks recent releases involving streaming inference, analytics, and database integrations.</p>
-      <a href="https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/" target="_blank" rel="noopener noreferrer">View product roundup <span aria-hidden="true">↗</span></a>
-    </article>
-  </div>
-  <div class="trends-more">
-    <h3>Follow the latest updates</h3>
-    <a href="https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/bg-p/power-bi-updates-blog" target="_blank" rel="noopener noreferrer">Microsoft Power BI updates ↗</a>
-    <a href="https://cloud.google.com/blog/topics/data-analytics" target="_blank" rel="noopener noreferrer">Google Cloud analytics ↗</a>
-  </div>
-  <p class="trends-note">Hand-picked reading, not a live news feed. Article summaries and dates are updated when this portfolio is edited.</p>
+</article></div></section><section aria-label="Business Analytics Showcase" class="category-panel" hidden="" id="category-business-showcase"><div class="category-panel-heading"><h3>Business Analytics Showcase</h3><p>Five Power BI-style projects across customer, commercial and operational analytics. Click a screenshot to enlarge it.</p></div><div class="projects"><article class="project"><button aria-label="Enlarge: Customer Churn &amp; Retention" class="shot shot-button" data-image="images/customer-churn.png" data-title="Customer Churn &amp; Retention" type="button"><img alt="Illustrative Power BI-style Customer Churn &amp; Retention dashboard with synthetic sample data" loading="lazy" src="images/customer-churn.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Customer analytics · Retention</span><h3>Customer Churn &amp; Retention</h3><dl><dt>Business question</dt><dd>Which customer segments are most likely to churn, and where should retention teams focus?</dd><dt>Analytical focus</dt><dd>Explore churn rates, contract mix, customer tenure and revenue at risk to prioritise retention actions.</dd><dt>Data &amp; tools</dt><dd>Power BI · SQL · DAX · Customer segmentation</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article><article class="project"><button aria-label="Enlarge: Sales &amp; Profitability" class="shot shot-button" data-image="images/sales-profitability.png" data-title="Sales &amp; Profitability" type="button"><img alt="Illustrative Power BI-style Sales &amp; Profitability dashboard with synthetic sample data" loading="lazy" src="images/sales-profitability.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Sales · Financial performance</span><h3>Sales &amp; Profitability</h3><dl><dt>Business question</dt><dd>Which products and regions generate revenue and sustainable profit?</dd><dt>Analytical focus</dt><dd>Compare sales growth, gross margins, product categories, seasonal patterns and regional contribution.</dd><dt>Data &amp; tools</dt><dd>Power BI · DAX · Power Query · Time intelligence</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article><article class="project"><button aria-label="Enlarge: Healthcare Service Performance" class="shot shot-button" data-image="images/healthcare-performance.png" data-title="Healthcare Service Performance" type="button"><img alt="Illustrative Power BI-style Healthcare Service Performance dashboard with synthetic sample data" loading="lazy" src="images/healthcare-performance.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Healthcare · Operations</span><h3>Healthcare Service Performance</h3><dl><dt>Business question</dt><dd>How can patient demand and waiting times be monitored to improve service?</dd><dt>Analytical focus</dt><dd>Track admissions, waiting times, departmental capacity, service targets and patient outcomes.</dd><dt>Data &amp; tools</dt><dd>Power BI · SQL · KPI analysis · Operational reporting</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article><article class="project"><button aria-label="Enlarge: Marketing Campaign Performance" class="shot shot-button" data-image="images/marketing-campaigns.png" data-title="Marketing Campaign Performance" type="button"><img alt="Illustrative Power BI-style Marketing Campaign Performance dashboard with synthetic sample data" loading="lazy" src="images/marketing-campaigns.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Marketing · ROI</span><h3>Marketing Campaign Performance</h3><dl><dt>Business question</dt><dd>Which campaigns and channels deliver the strongest conversion efficiency and return?</dd><dt>Analytical focus</dt><dd>Analyse media spend, conversion trends, CPL and ROAS to support campaign budget decisions.</dd><dt>Data &amp; tools</dt><dd>Power BI · DAX · Channel performance · ROI analysis</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article><article class="project"><button aria-label="Enlarge: Logistics &amp; Supply Chain" class="shot shot-button" data-image="images/logistics-supply-chain.png" data-title="Logistics &amp; Supply Chain" type="button"><img alt="Illustrative Power BI-style Logistics &amp; Supply Chain dashboard with synthetic sample data" loading="lazy" src="images/logistics-supply-chain.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Logistics · Delivery efficiency</span><h3>Logistics &amp; Supply Chain</h3><dl><dt>Business question</dt><dd>Where do shipment delays and fulfilment costs create operational bottlenecks?</dd><dt>Analytical focus</dt><dd>Monitor shipment volume, delivery reliability, carrier performance, transit time and cost drivers.</dd><dt>Data &amp; tools</dt><dd>Power BI · SQL · Supply chain KPIs · Exception reporting</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article></div></section></div>
+<aside aria-labelledby="trends-title" class="trends-sidebar">
+<div class="trends-title-row"><span aria-hidden="true" class="trends-indicator"></span><span class="trend-eyebrow">INDUSTRY WATCH</span></div>
+<h2 id="trends-title">Current Analytics Trends</h2>
+<p class="trends-intro">What's changing across business intelligence, AI-powered analytics and modern data platforms.</p>
+<div class="trends-updated">Curated articles · October 2026</div>
+<div class="trend-articles">
+<article class="trend-article">
+<div class="trend-meta"><span>MICROSOFT POWER BI</span><time datetime="2026-10">OCT 2026</time></div>
+<h3>Power BI adds AI authoring and new reporting features</h3>
+<p>The October release introduces natural-language support for custom visuals and a Gantt chart preview, alongside semantic-model improvements.</p>
+<a href="https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-october-2026-feature-summary/5374650" rel="noopener noreferrer" target="_blank">Read official update <span aria-hidden="true">↗</span></a>
+</article>
+<article class="trend-article">
+<div class="trend-meta"><span>GOOGLE CLOUD</span><time datetime="2026-09-14">14 SEP 2026</time></div>
+<h3>AI agents move closer to self-service data analysis</h3>
+<p>BigQuery's augmented analytics functions help analysts investigate changes in metrics and explore drivers directly in SQL.</p>
+<a href="https://cloud.google.com/blog/products/data-analytics/bigquery-augmented-analytics-tvfs" rel="noopener noreferrer" target="_blank">Read Google Cloud blog <span aria-hidden="true">↗</span></a>
+</article>
+<article class="trend-article">
+<div class="trend-meta"><span>MICROSOFT POWER BI</span><time datetime="2026-09">SEP 2026</time></div>
+<h3>Semantic-model governance and redesigned analytics workflows</h3>
+<p>September's Power BI update covers Copilot access controls, a refreshed Power Query editor preview and modern report design tools.</p>
+<a href="https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-september-2026-feature-summary/5325831" rel="noopener noreferrer" target="_blank">Explore September update <span aria-hidden="true">↗</span></a>
+</article>
+<article class="trend-article">
+<div class="trend-meta"><span>GOOGLE DATA CLOUD</span><time datetime="2026-09-10">10 SEP 2026</time></div>
+<h3>AI and data platforms are becoming more connected</h3>
+<p>Google's data cloud roundup tracks recent releases involving streaming inference, analytics, and database integrations.</p>
+<a href="https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/" rel="noopener noreferrer" target="_blank">View product roundup <span aria-hidden="true">↗</span></a>
+</article>
+</div>
+<div class="trends-more">
+<h3>Follow the latest updates</h3>
+<a href="https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/bg-p/power-bi-updates-blog" rel="noopener noreferrer" target="_blank">Microsoft Power BI updates ↗</a>
+<a href="https://cloud.google.com/blog/topics/data-analytics" rel="noopener noreferrer" target="_blank">Google Cloud analytics ↗</a>
+</div>
+<p class="trends-note">Hand-picked reading, not a live news feed. Article summaries and dates are updated when this portfolio is edited.</p>
 </aside></div></div></section>
 <dialog aria-label="Dashboard preview" class="image-dialog" id="dashboard-dialog"><div class="dialog-header"><strong id="dialog-title">Dashboard preview</strong><button aria-label="Close dashboard preview" id="dialog-close" type="button">Close ×</button></div><img alt="Enlarged portfolio dashboard preview" id="dialog-image" src=""/><p>Illustrative design with sample data — not a real client dashboard.</p></dialog>
-<section id="skills"><div class="wrap"><div class="skills-heading"><h2>Technical Skills &amp; Business Expertise</h2><p>Bridging data, technology and business requirements to deliver measurable insights and better decisions.</p></div><div class="skills"><article class="skill-card"><div class="skill-card-header"><span class="skill-icon" aria-hidden="true">◫</span><h3>Data Visualisation &amp; BI</h3></div><ul class="skill-tags"><li>Power BI</li><li>Tableau</li><li>DAX</li><li>Power Query</li><li>Data Modelling</li><li>Dashboard Design</li><li>KPI Reporting</li><li>Datorama</li></ul></article><article class="skill-card"><div class="skill-card-header"><span class="skill-icon" aria-hidden="true">⌘</span><h3>Data Analytics &amp; Programming</h3></div><ul class="skill-tags"><li>SQL</li><li>Azure SQL</li><li>Python</li><li>Advanced Excel</li><li>Pandas</li><li>NumPy</li><li>Data Cleaning</li><li>Exploratory Data Analysis</li><li>Alteryx</li></ul></article><article class="skill-card"><div class="skill-card-header"><span class="skill-icon" aria-hidden="true">∿</span><h3>Statistical &amp; Predictive Analytics</h3></div><ul class="skill-tags"><li>Regression Analysis</li><li>Predictive Modelling</li><li>Statistical Analysis</li><li>Trend Analysis</li><li>Forecasting</li><li>Data Validation</li></ul></article><article class="skill-card"><div class="skill-card-header"><span class="skill-icon" aria-hidden="true">≡</span><h3>Business Analysis</h3></div><ul class="skill-tags"><li>Requirements Gathering</li><li>BRDs &amp; FRDs</li><li>User Stories</li><li>Acceptance Criteria</li><li>Gap Analysis</li><li>Process Mapping</li><li>UAT</li><li>Process Improvement</li></ul></article><article class="skill-card"><div class="skill-card-header"><span class="skill-icon" aria-hidden="true">↗</span><h3>Data Engineering &amp; Automation</h3></div><ul class="skill-tags"><li>Microsoft Fabric</li><li>Power Automate</li><li>ETL &amp; Data Transformation</li><li>Data Integration</li><li>Power Query</li><li>Reporting Automation</li><li>Data Quality Checks</li></ul></article><article class="skill-card"><div class="skill-card-header"><span class="skill-icon" aria-hidden="true">◎</span><h3>Project Delivery &amp; Collaboration</h3></div><ul class="skill-tags"><li>Agile &amp; Scrum</li><li>JIRA</li><li>Azure DevOps</li><li>Stakeholder Management</li><li>Workshop Facilitation</li><li>Cross-functional Collaboration</li></ul></article><article class="skill-card"><div class="skill-card-header"><span class="skill-icon" aria-hidden="true">◇</span><h3>Industry &amp; Domain Expertise</h3></div><ul class="skill-tags"><li>Banking &amp; Financial Services</li><li>Insurance Analytics</li><li>Procurement</li><li>Workforce Management</li><li>Operations Analytics</li><li>Sustainability Analytics</li></ul></article><article class="skill-card"><div class="skill-card-header"><span class="skill-icon" aria-hidden="true">★</span><h3>Certifications &amp; Education</h3></div><ul class="skill-tags"><li>Microsoft PL-300 (2026)</li><li>Microsoft AZ-900 (2026)</li><li>MSc Business Analytics — in progress</li></ul></article></div><p class="skills-note">A combination of hands-on tools, analytical methods and business delivery capabilities.</p></div></section>
+<section id="skills"><div class="wrap"><div class="skills-heading"><h2>Technical Skills &amp; Business Expertise</h2><p>Bridging data, technology and business requirements to deliver measurable insights and better decisions.</p></div><div class="skills"><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">◫</span><h3>Data Visualisation &amp; BI</h3></div><ul class="skill-tags"><li>Power BI</li><li>Tableau</li><li>DAX</li><li>Power Query</li><li>Data Modelling</li><li>Dashboard Design</li><li>KPI Reporting</li><li>Datorama</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">⌘</span><h3>Data Analytics &amp; Programming</h3></div><ul class="skill-tags"><li>SQL</li><li>Azure SQL</li><li>Python</li><li>Advanced Excel</li><li>Pandas</li><li>NumPy</li><li>Data Cleaning</li><li>Exploratory Data Analysis</li><li>Alteryx</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">∿</span><h3>Statistical &amp; Predictive Analytics</h3></div><ul class="skill-tags"><li>Regression Analysis</li><li>Predictive Modelling</li><li>Statistical Analysis</li><li>Trend Analysis</li><li>Forecasting</li><li>Data Validation</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">≡</span><h3>Business Analysis</h3></div><ul class="skill-tags"><li>Requirements Gathering</li><li>BRDs &amp; FRDs</li><li>User Stories</li><li>Acceptance Criteria</li><li>Gap Analysis</li><li>Process Mapping</li><li>UAT</li><li>Process Improvement</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">↗</span><h3>Data Engineering &amp; Automation</h3></div><ul class="skill-tags"><li>Microsoft Fabric</li><li>Power Automate</li><li>ETL &amp; Data Transformation</li><li>Data Integration</li><li>Power Query</li><li>Reporting Automation</li><li>Data Quality Checks</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">◎</span><h3>Project Delivery &amp; Collaboration</h3></div><ul class="skill-tags"><li>Agile &amp; Scrum</li><li>JIRA</li><li>Azure DevOps</li><li>Stakeholder Management</li><li>Workshop Facilitation</li><li>Cross-functional Collaboration</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">◇</span><h3>Industry &amp; Domain Expertise</h3></div><ul class="skill-tags"><li>Banking &amp; Financial Services</li><li>Insurance Analytics</li><li>Procurement</li><li>Workforce Management</li><li>Operations Analytics</li><li>Sustainability Analytics</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">★</span><h3>Certifications &amp; Education</h3></div><ul class="skill-tags"><li>Microsoft PL-300 (2026)</li><li>Microsoft AZ-900 (2026)</li><li>MSc Business Analytics — in progress</li></ul></article></div><p class="skills-note">A combination of hands-on tools, analytical methods and business delivery capabilities.</p></div></section>
 <section id="approach"><div class="wrap"><h2>How I approach an analysis</h2><div class="approach"><div><h3>Start with the decision</h3><p>I ask what someone will do differently after seeing the numbers, then work backwards to the data and the chart.</p></div><div><h3>Check the data first</h3><p>Before building anything, I look for gaps, duplicates and definitions that don't match, because a polished dashboard on bad data misleads.</p></div><div><h3>Say it plainly</h3><p>Every dashboard I build leads with its main finding in a sentence, with the detail one click below.</p></div></div></div></section>
 <footer id="contact"><div class="wrap"><h2>Let's talk</h2><p>I'm based in London and open to analyst roles and contract work.</p><div class="links"><!-- Replace placeholder links with your own --><a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">LinkedIn</a><a href="https://github.com/jagruti-analytics">GitHub</a><a href="mailto:you@example.com">Email</a></div></div></footer>
 <script>
