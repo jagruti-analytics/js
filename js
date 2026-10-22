@@ -397,7 +397,9 @@
   }
 
   const rows = document.getElementById("rows");
-  roles.forEach((r, i) => {
+ roles
+  .sort((a, b) => new Date(b.start) - new Date(a.start))
+  .forEach((r, i) => {
     const left = toMonths(r.start) / totalMonths * 100;
     const width = (toMonths(r.end) - toMonths(r.start)) / totalMonths * 100;
     const row = document.createElement("div");
