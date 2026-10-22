@@ -167,46 +167,76 @@ html{scroll-padding-top:105px}
 @media(prefers-reduced-motion:reduce){.site-nav .nav-center a,.site-nav .nav-center a::after,.site-nav .nav-cta{transition:none}}
 
 
-/* Final refinements: taller navigation and more balanced introduction */
-@media (min-width:1121px) {
-  .site-nav .nav-shell { min-height: 76px; padding-top:12px; padding-bottom:12px; gap:20px; }
+/* PORTFOLIO DESIGN V3 — easy to verify in GitHub */
+/* Larger, visibly more substantial navigation at real desktop widths */
+.site-nav .nav-shell {
+  width: 100%;
+  max-width: 1520px;
+  min-height: 104px;
+  padding: 20px 36px;
+  gap: 22px;
 }
-.site-nav .brand-mark { width:46px; height:46px; }
-.site-nav .brand-copy strong { font-size:18px; font-weight:700; }
-.site-nav .brand-copy small { font-size:12px; margin-top:5px; }
-.site-nav .nav-center { gap:24px; }
-.site-nav .nav-center a { font-size:14px; padding:8px 2px; }
-.site-nav .nav-badge { font-size:12px; padding:8px 12px; }
-.site-nav .nav-cta { font-size:14px; padding:11px 18px; }
-/* Allow the headline more space and make the right-hand portrait prominent. */
-.hero > .wrap { max-width:1280px; }
-.hero .hero-grid { grid-template-columns:minmax(0, 1fr) 320px; gap:clamp(2rem, 5vw, 4.5rem); }
-.hero .hero-grid.no-photo { grid-template-columns:1fr; }
-.hero h1 { max-width:19ch; font-size:clamp(2.8rem, 4.2vw, 4.6rem); line-height:1.08; }
-.hero p.lead, .hero .proof { max-width:64ch; }
-.hero .portrait { width:100%; max-width:320px; aspect-ratio:4/5; object-fit:cover; object-position:center top; }
-@media (max-width:1120px) {
-  .site-nav .nav-shell { padding-top:12px; padding-bottom:12px; gap:12px; }
-  .site-nav .nav-center { gap:16px; }
-  .hero .hero-grid { grid-template-columns:minmax(0, 1fr) 280px; gap:2rem; }
-  .hero h1 { font-size:clamp(2.6rem, 5vw, 4rem); }
-}
-@media (max-width:760px) {
-  .hero .hero-grid, .hero .hero-grid.no-photo { grid-template-columns:1fr; }
-  .hero h1 { max-width:20ch; font-size:clamp(2.4rem, 8vw, 3.6rem); }
-  .hero .portrait { max-width:280px; margin:0 auto; }
-}
-@media (max-width:650px) {
-  .site-nav .brand-mark { width:40px; height:40px; }
-  .site-nav .brand-copy strong { font-size:16px; }
-  .site-nav .nav-center { gap:12px; }
-  .site-nav .nav-center a { font-size:13px; }
-  .site-nav .nav-cta { font-size:13px; padding:9px 14px; }
-}
+.site-nav .brand-mark { width: 54px; height: 54px; padding: 11px; }
+.site-nav .brand-mark span { width: 7px; }
+.site-nav .brand-mark span:nth-child(1) { height: 14px; }
+.site-nav .brand-mark span:nth-child(2) { height: 23px; }
+.site-nav .brand-mark span:nth-child(3) { height: 31px; }
+.site-nav .brand-copy strong { font-size: 21px; font-weight: 700; }
+.site-nav .brand-copy small { font-size: 13px; margin-top: 6px; }
+.site-nav .nav-center { gap: clamp(12px, 1.4vw, 25px); }
+.site-nav .nav-center a { font-size: 15px; padding: 10px 2px; }
+.site-nav .nav-badge { font-size: 12px; padding: 9px 13px; }
+.site-nav .nav-cta { font-size: 15px; padding: 13px 19px; }
 
+/* Wider hero and significantly larger image; clearer, less cramped headline */
+.hero { padding: 5rem 0 4.6rem; }
+.hero > .wrap { max-width: 1440px; padding: 0 clamp(24px, 4vw, 72px); }
+.hero .hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(310px, 365px);
+  gap: clamp(36px, 4vw, 72px);
+  align-items: center;
+}
+.hero .hero-grid.no-photo { grid-template-columns: 1fr; }
+.hero h1 { max-width: 21ch; font-size: clamp(3rem, 4vw, 4.35rem); line-height: 1.10; }
+.hero p.lead, .hero .proof { max-width: 65ch; }
+.hero .portrait { width: 100%; max-width: 365px; aspect-ratio: 4/5; object-fit: cover; object-position: center top; }
+
+/* Realistic laptop screens: header grows instead of reverting to the small version */
+@media (max-width: 1250px) {
+  .site-nav .nav-shell { min-height: 94px; padding: 16px 24px; gap: 14px; }
+  .site-nav .nav-center { gap: 14px; }
+  .site-nav .nav-center a { font-size: 14px; }
+  .site-nav .nav-badge { font-size: 11px; }
+  .site-nav .nav-cta { font-size: 13px; padding: 11px 15px; }
+  .hero .hero-grid { grid-template-columns: minmax(0,1fr) 320px; gap: 36px; }
+  .hero h1 { font-size: clamp(2.7rem, 4.2vw, 3.7rem); }
+}
+@media (max-width: 1120px) {
+  .site-nav .nav-shell { min-height: 94px; }
+  .site-nav .nav-brand { margin-right: auto; }
+  .site-nav .nav-right { margin-left: auto; }
+  .site-nav .nav-center { order: 3; width: 100%; justify-content: center; }
+}
+@media (max-width: 760px) {
+  .site-nav .nav-shell { padding: 14px 18px; min-height: unset; }
+  .site-nav .brand-mark { width: 44px; height: 44px; }
+  .site-nav .brand-copy strong { font-size: 17px; }
+  .site-nav .brand-copy small { font-size: 11px; }
+  .site-nav .nav-center { justify-content: flex-start; }
+  .hero { padding: 3rem 0; }
+  .hero .hero-grid, .hero .hero-grid.no-photo { grid-template-columns: 1fr; }
+  .hero h1 { font-size: clamp(2.35rem, 8vw, 3.6rem); max-width: 20ch; }
+  .hero .portrait { max-width: 320px; margin: 0 auto; }
+}
+@media (max-width: 650px) {
+  .site-nav .nav-right { margin-left: 0; }
+  .site-nav .nav-center { gap: 12px; }
+  .site-nav .nav-center a { font-size: 13px; }
+}
 </style>
 </head>
 <body id="top">
+<!-- Published design version: PORTFOLIO DESIGN V3 — enlarged header and hero -->
 <nav class="site-nav" aria-label="Main navigation">
   <div class="wrap nav-shell">
     <a class="nav-brand" href="#top" aria-label="Jagruti Shete — back to top">
