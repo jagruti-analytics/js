@@ -6,6 +6,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="#0b1425" name="theme-color"/>
 <title>Jagruti Shete | Data and Business Analyst</title>
+<!-- Portfolio version: career-impact-achievements-2026-10 -->
 <meta content="Portfolio of Jagruti Shete, a London-based business and data analyst building Power BI dashboards, SQL reporting and requirements analysis for banking, insurance and procurement clients." name="description"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -284,6 +285,129 @@ footer .contact-pending { color:#b7c5d5; font-size:.94rem; font-weight:500; bord
 @media (min-width:651px){.portfolio-left .category-tile[data-category="business-showcase"]{grid-column:1 / -1;min-height:112px;align-items:center}}
 /* Make missing screenshot uploads obvious without showing broken-image glyphs */
 .project .shot .missing-image {display:grid;place-items:center;min-height:180px;color:#d3e3ee;padding:1.25rem;text-align:center;font-size:.9rem;}
+
+/* HERO ANIMATION V4: One shared 7.2s timeline synchronises flow pulses and headline emphasis. */
+.hero .synced-hero-grid {display:grid;grid-template-columns:minmax(205px,240px) minmax(0,1fr) minmax(240px,310px);gap:clamp(20px,2.3vw,40px);align-items:center}
+.hero .hero-visual {min-width:0;display:flex;align-items:center;justify-content:center}
+.hero .flow-stage {width:100%;max-width:240px;position:relative}
+.hero .flow-eyebrow {font-size:10px;letter-spacing:.17em;font-weight:800;color:#73e9df;margin:0 0 12px}
+.hero .flow-card {border:1px solid rgba(103,232,249,.24);border-radius:13px;padding:13px 14px;background:rgba(16,34,54,.88);box-shadow:0 12px 30px rgba(0,0,0,.20);animation:heroCardFloat 6s ease-in-out infinite}
+.hero .flow-insights{animation-delay:.7s}
+.hero .flow-strategy{animation-delay:1.4s}
+.hero .flow-card-head{display:flex;gap:10px;align-items:center}
+.hero .flow-card-head strong {font-size:15px;line-height:1.25;display:block;color:#f8fcff}
+.hero .flow-card-head small{font-size:10px;line-height:1.5;display:block;color:#a8c2d6;margin-top:3px}
+.hero .flow-icon{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,#2dd4bf,#67e8f9);display:grid;place-items:center;color:#052338;font-size:18px;font-weight:800;flex-shrink:0}
+.hero .mini-bars{height:34px;display:flex;gap:7px;align-items:end;padding-left:5px;margin-top:12px}
+.hero .mini-bars i{display:block;background:linear-gradient(#67e8f9,#2dd4bf);border-radius:4px 4px 0 0;flex:1;animation:heroBarPulse 2.5s ease-in-out infinite}
+.hero .mini-bars i:nth-child(1){height:35%}.hero .mini-bars i:nth-child(2){height:58%;animation-delay:.16s}.hero .mini-bars i:nth-child(3){height:40%;animation-delay:.32s}.hero .mini-bars i:nth-child(4){height:88%;animation-delay:.48s}.hero .mini-bars i:nth-child(5){height:64%;animation-delay:.64s}.hero .mini-bars i:nth-child(6){height:95%;animation-delay:.8s}
+.hero .flow-sparkline {margin-top:12px;width:100%;height:36px;display:block}
+.hero .flow-area{fill:rgba(45,212,191,.13)}.hero .flow-path{stroke:#67e8f9;stroke-width:2.8;stroke-linejoin:round;stroke-linecap:round;fill:none}
+.hero .decision-badges {display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.hero .decision-badges span{padding:4px 7px;border-radius:999px;border:1px solid rgba(45,212,191,.24);color:#bff8f0;font-size:10px;background:rgba(45,212,191,.1)}
+.hero .flow-line {height:33px;width:2px;margin:7px auto;border-radius:99px;background:linear-gradient(rgba(45,212,191,.14),rgba(45,212,191,.85),rgba(59,130,246,.3));position:relative}
+.hero .flow-pulse{position:absolute;left:50%;width:11px;height:11px;border-radius:50%;transform:translateX(-50%);background:radial-gradient(circle,#b9fff8,#2dd4bf 65%,#138f83);box-shadow:0 0 16px rgba(45,212,191,.8)}
+.hero .pulse-first{animation:flowPulseA 7.2s linear infinite}
+.hero .pulse-second{animation:flowPulseB 7.2s linear infinite}
+.hero .hero-copy{min-width:0}
+.hero .hero-copy h1{font-size:clamp(2.2rem,3.15vw,3.45rem);line-height:1.11;max-width:none;letter-spacing:-.028em}
+.hero .hero-copy p.lead{font-size:clamp(.95rem,1.1vw,1.05rem);line-height:1.62;margin-top:20px}
+.hero .hero-copy .proof{font-size:.86rem;line-height:1.55;margin-top:16px}
+.hero .hero-copy .actions{margin-top:18px}
+.hero .synced-hero-grid .portrait{max-width:310px;width:100%;height:auto;margin-inline:auto}
+.hero .hero-phrase {position:relative;display:inline;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.hero .hero-phrase::after{content:"";position:absolute;left:0;right:0;bottom:.025em;height:.11em;border-radius:99px;transform:scaleX(.82);opacity:0;background:linear-gradient(90deg,#2dd4bf,#67e8f9);filter:blur(.7px);pointer-events:none}
+.hero .phrase-first{animation:flowPhraseA 7.2s ease-in-out infinite}.hero .phrase-second{animation:flowPhraseB 7.2s ease-in-out infinite}
+.hero .phrase-first::after{animation:flowUnderlineA 7.2s ease-in-out infinite}.hero .phrase-second::after{animation:flowUnderlineB 7.2s ease-in-out infinite}
+@keyframes flowPulseA{0%,12%{top:-4px;opacity:0}18%{top:-4px;opacity:1}38%{top:26px;opacity:1}46%,100%{top:26px;opacity:0}}
+@keyframes flowPulseB{0%,48%{top:-4px;opacity:0}56%{top:-4px;opacity:1}80%{top:26px;opacity:1}88%,100%{top:26px;opacity:0}}
+@keyframes flowPhraseA{0%,12%,46%,100%{color:#fff;text-shadow:none}18%,38%{color:#dcfffb;text-shadow:0 0 24px rgba(45,212,191,.45)}}
+@keyframes flowPhraseB{0%,48%,88%,100%{color:#fff;text-shadow:none}56%,80%{color:#dcfffb;text-shadow:0 0 24px rgba(45,212,191,.45)}}
+@keyframes flowUnderlineA{0%,14%,46%,100%{opacity:0;transform:scaleX(.82)}20%,38%{opacity:1;transform:scaleX(1)}}
+@keyframes flowUnderlineB{0%,52%,88%,100%{opacity:0;transform:scaleX(.82)}58%,80%{opacity:1;transform:scaleX(1)}}
+@keyframes heroCardFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes heroBarPulse{0%,100%{transform:scaleY(1);opacity:.9}50%{transform:scaleY(1.1);opacity:1}}
+@media (max-width:1150px){
+ .hero .synced-hero-grid{grid-template-columns:minmax(180px,225px) minmax(0,1fr);gap:28px}
+ .hero .synced-hero-grid .portrait{grid-column:2;grid-row:2;max-width:250px;justify-self:center}
+ .hero .hero-visual{grid-row:1 / span 2;align-self:center}
+ .hero .hero-copy h1{font-size:clamp(2.2rem,4vw,3.5rem)}
+}
+@media (max-width:720px){
+ .hero .synced-hero-grid{grid-template-columns:1fr;gap:26px}
+ .hero .hero-visual{grid-row:auto;order:2;justify-content:center}
+ .hero .hero-copy{order:1}
+ .hero .synced-hero-grid .portrait{grid-column:auto;grid-row:auto;order:3;max-width:285px}
+ .hero .flow-stage{max-width:260px}
+ .hero .hero-copy h1{font-size:clamp(2.3rem,7.8vw,3.5rem)}
+}
+@media(prefers-reduced-motion:reduce){
+ .hero .flow-card,.hero .mini-bars i,.hero .flow-pulse,.hero .hero-phrase,.hero .hero-phrase::after{animation:none!important}
+ .hero .flow-pulse{opacity:0}
+}
+
+/* Achievements & Recognition — premium career highlights */
+#achievements > .wrap {max-width:1280px;}
+.achievement-eyebrow {display:block;color:#75e2d5;font-size:.74rem;font-weight:800;letter-spacing:.13em;margin-bottom:.55rem;}
+#achievements h2 {font-size:clamp(2rem,4vw,2.65rem);margin-bottom:.7rem;}
+.achievements-intro {max-width:80ch;margin-bottom:1.8rem;}
+.achievement-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem;}
+.achievement-card {display:flex;flex-direction:column;gap:.85rem;min-width:0;background:linear-gradient(145deg,#24394d,#1b2d41);border:1px solid #40576a;border-radius:16px;padding:1.55rem;box-shadow:0 15px 34px rgba(0,0,0,.11);transition:transform .22s ease,border-color .22s ease;}
+.achievement-card:hover {transform:translateY(-4px);border-color:#69cfc6;}
+.achievement-head {display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;}
+.achievement-symbol {display:grid;place-items:center;width:43px;height:43px;flex:none;border-radius:12px;background:#15424e;border:1px solid #43828b;color:#83f5e5;font-size:1.45rem;}
+.achievement-tag {font-size:.7rem;color:#85ded6;letter-spacing:.075em;font-weight:800;}
+.achievement-card h3 {font-size:1.34rem;line-height:1.25;color:#f5f9fc;}
+.achievement-card > p {margin:0;color:#bfd0dd;line-height:1.65;font-size:.94rem;flex:1;}
+.achievement-metric {color:#65e3d4;font-family:var(--head);font-size:2rem;font-weight:800;line-height:1.2;}
+.achievement-metric small {display:block;font-family:var(--body);font-size:.76rem;font-weight:500;color:#afc8d6;line-height:1.4;margin-top:.25rem;}
+.achievement-footer {display:flex;gap:.45rem;flex-wrap:wrap;padding-top:.95rem;border-top:1px solid #425a6e;margin-top:auto;}
+.achievement-footer span {color:#dfedf4;font-size:.72rem;background:#304a5e;border:1px solid #415e73;border-radius:5px;padding:.28rem .5rem;}
+@media (max-width:1000px){.achievement-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width:680px){.achievement-grid{grid-template-columns:1fr;}.achievement-card{padding:1.25rem;}}
+@media (prefers-reduced-motion:reduce){.achievement-card{transition:none;}.achievement-card:hover{transform:none;}}
+
+/* Compact one-at-a-time showcase carousel — no external library */
+#category-business-showcase .showcase-viewport { max-width: 720px; min-width: 0; }
+#category-business-showcase .showcase-slides,
+.portfolio-left #category-business-showcase .showcase-slides { display:block; grid-template-columns:none; }
+#category-business-showcase .showcase-slide { display:flex; width:100%; min-width:0; animation:showcase-enter .38s ease both; }
+#category-business-showcase .showcase-slide[hidden] { display:none !important; }
+#category-business-showcase .showcase-slide .shot { aspect-ratio:16/9; }
+#category-business-showcase .showcase-slide .body { padding:1.2rem 1.4rem; }
+#category-business-showcase .showcase-controls { max-width:720px; display:flex; align-items:center; justify-content:space-between; gap:.75rem; padding:.95rem 0 .2rem; }
+#category-business-showcase .showcase-arrow { display:inline-flex; align-items:center; justify-content:center; gap:.55rem; padding:.65rem .9rem; border:1px solid #42647a; background:#243a4e; border-radius:9px; color:#eaf9fa; font:600 .88rem var(--body); cursor:pointer; transition:background .18s, border-color .18s; }
+#category-business-showcase .showcase-arrow:hover { background:#194b53; border-color:#5eead4; }
+#category-business-showcase .showcase-progress { display:flex; align-items:center; gap:.75rem; color:#b5cfdb; font-size:.8rem; font-variant-numeric:tabular-nums; }
+#category-business-showcase .showcase-dots { display:flex; align-items:center; gap:7px; }
+#category-business-showcase .showcase-dot { width:9px; height:9px; padding:0; border:0; border-radius:50%; background:#4c6578; cursor:pointer; transition:width .2s, background .2s; }
+#category-business-showcase .showcase-dot.is-active { background:#5eead4; width:23px; border-radius:9px; }
+@keyframes showcase-enter { from { opacity:.3; transform:translateY(7px); } to { opacity:1; transform:translateY(0); } }
+@media(max-width:560px){ #category-business-showcase .showcase-arrow span {display:none} #category-business-showcase .showcase-arrow {min-width:43px;} #category-business-showcase .showcase-controls {gap:.5rem} #category-business-showcase .showcase-progress{gap:.45rem} }
+@media(prefers-reduced-motion:reduce){ #category-business-showcase .showcase-slide {animation:none;} #category-business-showcase .showcase-dot,#category-business-showcase .showcase-arrow{transition:none;} }
+
+/* Refined global-opportunities contact section */
+.connect-section {background:linear-gradient(155deg,#101e30 0%,#14283a 100%);border-top:1px solid #39536a;padding:4.5rem 0 2rem;}
+.connect-section .connect-wrap{max-width:920px;text-align:center;}
+.connect-availability{display:inline-flex;align-items:center;gap:.65rem;border:1px solid rgba(94,234,212,.27);border-radius:99px;background:rgba(45,212,191,.09);color:#a5f3ea;padding:.55rem 1rem;font-weight:700;letter-spacing:.09em;font-size:.75rem;}
+.connect-status-dot{width:8px;height:8px;background:#2dd4bf;border-radius:50%;box-shadow:0 0 12px rgba(45,212,191,.65)}
+.connect-section h2{margin:1.15rem 0 .8rem;font-size:clamp(2.3rem,5vw,3.35rem);color:#fff;}
+.connect-intro{max-width:630px;margin:0 auto 1rem;color:#c2d2df;font-size:1.02rem;line-height:1.7;}
+.connect-location{display:flex;justify-content:center;align-items:center;gap:.4rem;color:#b7c5d5;font-size:.9rem;margin:0 auto 2rem;}
+.connect-location span{font-size:1.35rem;color:#75e2d5;}
+.connect-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem;max-width:720px;margin:0 auto 2.6rem;}
+.connect-card{display:flex;flex-direction:column;align-items:center;gap:.6rem;text-decoration:none;color:#eef5fa;min-width:0;padding:1.7rem 1.2rem 1.5rem;border:1px solid #3c6071;border-radius:16px;background:linear-gradient(160deg,#223a4c,#1b3043);transition:transform .2s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease;}
+.connect-card:hover{transform:translateY(-4px);border-color:#5eead4;box-shadow:0 16px 36px rgba(0,0,0,.2);background:linear-gradient(160deg,#294657,#1b3546);color:#fff;text-decoration:none;}
+.connect-card:focus-visible{outline:3px solid #5eead4;outline-offset:4px;}
+.connect-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:13px;background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.22);color:#5eead4;font-size:1.55rem;font-weight:800;}
+.connect-icon-linkedin{font-family:Arial,sans-serif;font-size:1.35rem;font-weight:800;}
+.connect-card strong{font:700 1.19rem var(--head);color:#fff;}
+.connect-detail{font-size:.89rem;color:#c3d2df;overflow-wrap:anywhere;}
+.connect-action{font-size:.89rem;font-weight:700;color:#75e2d5;margin-top:.25rem;}
+.connect-signoff{border-top:1px solid #30495c;margin:0;padding-top:1.6rem;color:#8ca5b8;font-size:.85rem;}
+@media(max-width:650px){.connect-section{padding:3.3rem 0 1.7rem}.connect-cards{grid-template-columns:1fr;gap:.85rem}.connect-card{padding:1.3rem 1rem}.connect-intro{font-size:.96rem}}
+@media(prefers-reduced-motion:reduce){.connect-card{transition:none}.connect-card:hover{transform:none}}
+
 </style>
 </head>
 <body id="top">
@@ -297,36 +421,37 @@ footer .contact-pending { color:#b7c5d5; font-size:.94rem; font-weight:500; bord
 <span class="brand-copy"><strong>Jagruti Shete</strong><small>Data Analyst &amp; Business Analyst</small></span>
 </a>
 <div class="nav-center">
-<a href="#career">Career</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
+<a href="#career">Career</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
 </div>
 <div class="nav-right">
-<span class="nav-badge"><span aria-hidden="true" class="badge-dot"></span>Open to UK Analyst Roles</span>
+<span class="nav-badge"><span aria-hidden="true" class="badge-dot"></span>Open to Opportunities</span>
 <a class="nav-cta" href="#projects">View Dashboards <span aria-hidden="true">↗</span></a>
 </div>
 </div>
 </nav>
-<header class="hero"><div class="wrap"><div class="hero-grid"><div><h1>Turning data into insights. Turning insights into business decisions.</h1><p class="lead">I'm Jagruti, a London-based Data Analyst and Business Analyst with 5+ years of experience transforming complex data and business requirements into actionable insights. I specialise in Power BI, SQL reporting, stakeholder engagement and requirements analysis, with experience across banking, financial services, insurance, procurement and operations. I'm currently pursuing an MSc in Business Analytics.</p><p class="proof">Microsoft Certified: Power BI Data Analyst Associate (PL-300) | 45+ dashboards developed across BFSI, workforce management, procurement and operations | 8 enterprise procurement clients supported.</p><div class="actions"><a class="btn primary" href="#projects">See my dashboards</a><a class="btn ghost" href="#contact">Get in touch</a></div></div>
-<!-- Professional portrait uploaded to GitHub images folder -->
-<img alt="Jagruti Shete – Data Analyst and Business Analyst" class="portrait" decoding="async" loading="eager" src="images/Polished%20Analytics%20Professional%20Portrait.png"/></div></div></header>
-<section class="career-section" id="career">
-<div class="wrap career-wrap">
-<div class="career-heading"><div><span class="career-kicker">PROFESSIONAL EXPERIENCE</span><h2>My Career, Analysed</h2><p class="intro">Explore my experience across data analytics and business analysis. Select an organisation to see key achievements and tools.</p></div><span aria-hidden="true" class="career-heading-mark">▥</span></div>
-<div aria-label="Career highlights" class="career-stats">
-<div class="career-stat"><strong>5+</strong><span>Years of experience</span></div>
-<div class="career-stat"><strong>45+</strong><span>Dashboards developed</span></div>
-<div class="career-stat"><strong>8</strong><span>Enterprise clients supported</span></div>
+<header class="hero"><div class="wrap"><div class="hero-grid synced-hero-grid">
+<div class="hero-visual" aria-label="Animated process: Data to Insights to Strategy">
+  <div class="flow-stage">
+    <p class="flow-eyebrow">ANALYTICAL FLOW</p>
+    <div class="flow-card flow-data">
+      <div class="flow-card-head"><span class="flow-icon" aria-hidden="true">▦</span><div><strong>Data</strong><small>SQL · Excel · APIs</small></div></div>
+      <div class="mini-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="flow-line"><span class="flow-pulse pulse-first"></span></div>
+    <div class="flow-card flow-insights">
+      <div class="flow-card-head"><span class="flow-icon" aria-hidden="true">⌁</span><div><strong>Insights</strong><small>Patterns · Trends · KPIs</small></div></div>
+      <svg class="flow-sparkline" aria-hidden="true" viewBox="0 0 210 48" preserveAspectRatio="none"><path class="flow-area" d="M1 38 L35 25 L70 31 L106 13 L144 21 L178 4 L209 10 L209 48 L1 48 Z"/><path class="flow-path" d="M1 38 L35 25 L70 31 L106 13 L144 21 L178 4 L209 10"/></svg>
+    </div>
+    <div class="flow-line"><span class="flow-pulse pulse-second"></span></div>
+    <div class="flow-card flow-strategy">
+      <div class="flow-card-head"><span class="flow-icon" aria-hidden="true">✓</span><div><strong>Strategy</strong><small>Decisions · Impact · Growth</small></div></div>
+      <div class="decision-badges"><span>Action</span><span>Optimisation</span></div>
+    </div>
+  </div>
 </div>
-<div class="career-explorer">
-<div aria-label="Choose an organisation" class="career-role-list" role="group"><p class="career-list-label">SELECT AN EXPERIENCE</p><div id="career-options"></div></div>
-<article aria-atomic="true" aria-live="polite" class="career-details" id="career-details">
-<div class="career-details-top"><span class="career-details-kicker">EXPERIENCE DETAILS</span><span id="career-date"></span></div>
-<h3 id="career-title"></h3><p class="career-company" id="career-company"></p>
-<div class="career-detail-block"><h4>Key contribution</h4><p id="career-achievement"></p></div>
-<div class="career-detail-block"><h4>Tools &amp; capabilities</h4><div class="career-tool-tags" id="career-tools"></div></div>
-</article>
-</div>
-</div>
-</section>
+<div class="hero-copy"><h1>Turning <span class="hero-phrase phrase-first">data into insights</span>. Turning <span class="hero-phrase phrase-second">insights into business decisions</span>.</h1><p class="lead">I'm Jagruti, a London-based Data Analyst and Business Analyst with 5+ years of experience transforming complex data and business requirements into actionable insights. I specialise in Power BI, SQL reporting, stakeholder engagement and requirements analysis, with experience across banking, financial services, insurance, procurement and operations. I'm currently pursuing an MSc in Business Analytics.</p><p class="proof">Microsoft Certified: Power BI Data Analyst Associate (PL-300) | 45+ dashboards developed across BFSI, workforce management, procurement and operations | 8 enterprise procurement clients supported.</p><div class="actions"><a class="btn primary" href="#projects">See my dashboards</a><a class="btn ghost" href="#contact">Get in touch</a></div></div>
+<img alt="Jagruti Shete – Data Analyst and Business Analyst" class="portrait" decoding="async" loading="eager" src="images/Polished%20Analytics%20Professional%20Portrait.png"/>
+</div></div></header>
 <section id="projects"><div class="wrap"><div class="portfolio-workspace"><div class="portfolio-left"><h2>Dashboards and analysis</h2><p class="intro">Explore eleven portfolio dashboard concepts by analytics area. Select a category to see previews and project details.</p><p class="portfolio-disclaimer"><strong>Portfolio note:</strong> The dashboard images below are visual recreations using illustrative data, not screenshots of confidential client reports. They show example layouts and analytical approaches; the figures are not validated research findings.</p><div aria-label="Dashboard categories" class="category-tiles" role="group"><button aria-controls="category-sustainability" aria-expanded="false" class="category-tile" data-category="sustainability" type="button"><span aria-hidden="true" class="category-tile-icon">◈</span><span class="category-tile-content"><strong>Sustainability &amp; Public Sector</strong><span class="category-tile-description">Agricultural waste and UK procurement opportunities</span><span class="category-tile-count">02 projects</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-workforce" aria-expanded="false" class="category-tile" data-category="workforce" type="button"><span aria-hidden="true" class="category-tile-icon">▥</span><span class="category-tile-content"><strong>Workforce &amp; Operations</strong><span class="category-tile-description">People analytics and operational efficiency</span><span class="category-tile-count">02 projects</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-procurement" aria-expanded="false" class="category-tile" data-category="procurement" type="button"><span aria-hidden="true" class="category-tile-icon">▤</span><span class="category-tile-content"><strong>Procurement Analytics</strong><span class="category-tile-description">Spend, suppliers and contract performance</span><span class="category-tile-count">01 project</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-bfsi" aria-expanded="false" class="category-tile" data-category="bfsi" type="button"><span aria-hidden="true" class="category-tile-icon">◉</span><span class="category-tile-content"><strong>BFSI Analytics</strong><span class="category-tile-description">Banking, financial services and insurance insights</span><span class="category-tile-count">01 project</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-business-showcase" aria-expanded="false" class="category-tile" data-category="business-showcase" type="button"><span aria-hidden="true" class="category-tile-icon">▦</span><span class="category-tile-content"><strong>Business Analytics Showcase</strong><span class="category-tile-description">Customer, sales, healthcare, marketing and logistics</span><span class="category-tile-count">05 projects</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button></div><section aria-label="Sustainability &amp; Public Sector" class="category-panel" hidden="" id="category-sustainability"><div class="category-panel-heading"><h3>Sustainability &amp; Public Sector</h3><p>Select a screenshot to view the full-size dashboard.</p></div><div class="projects"><article class="project">
 <button aria-label="View larger image: Agricultural waste &amp; sustainability analytics" class="shot shot-button" data-image="images/agricultural-waste.png" data-title="Agricultural waste &amp; sustainability analytics" type="button">
 <img alt="Illustrative Agricultural waste &amp; sustainability analytics dashboard design with sample figures" loading="lazy" onerror="this.style.display='none';if(!this.parentElement.querySelector('.missing-image')){const m=document.createElement('span');m.className='missing-image';m.textContent='Dashboard screenshot unavailable — upload the matching PNG to the images folder.';this.parentElement.appendChild(m)}" src="images/agricultural-waste.png"/>
@@ -393,7 +518,11 @@ footer .contact-pending { color:#b7c5d5; font-size:.94rem; font-weight:500; bord
 <dl><dt>Business question</dt><dd>How do revenue, customer activity and insurance claims vary across products and regions?</dd><dt>Focus / finding</dt><dd>Bring customer, product and claims metrics into a single view to identify trends and areas for deeper analysis.</dd><dt>Data &amp; tools</dt><dd>Power BI · BFSI KPIs · Illustrative BFSI dashboard</dd></dl>
 <p class="sample-note">Portfolio visualisation using illustrative data — not a client report.</p>
 </div>
-</article></div></section><section aria-label="Business Analytics Showcase" class="category-panel" hidden="" id="category-business-showcase"><div class="category-panel-heading"><h3>Business Analytics Showcase</h3><p>Five Power BI-style projects across customer, commercial and operational analytics. Click a screenshot to enlarge it.</p></div><div class="projects"><article class="project"><button aria-label="Enlarge: Customer Churn &amp; Retention" class="shot shot-button" data-image="images/customer-churn.png" data-title="Customer Churn &amp; Retention" type="button"><img alt="Illustrative Power BI-style Customer Churn &amp; Retention dashboard with synthetic sample data" loading="lazy" onerror="this.style.display='none';if(!this.parentElement.querySelector('.missing-image')){const m=document.createElement('span');m.className='missing-image';m.textContent='Dashboard screenshot unavailable — upload the matching PNG to the images folder.';this.parentElement.appendChild(m)}" src="images/customer-churn.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Customer analytics · Retention</span><h3>Customer Churn &amp; Retention</h3><dl><dt>Business question</dt><dd>Which customer segments are most likely to churn, and where should retention teams focus?</dd><dt>Analytical focus</dt><dd>Explore churn rates, contract mix, customer tenure and revenue at risk to prioritise retention actions.</dd><dt>Data &amp; tools</dt><dd>Power BI · SQL · DAX · Customer segmentation</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article><article class="project"><button aria-label="Enlarge: Sales &amp; Profitability" class="shot shot-button" data-image="images/sales-profitability.png" data-title="Sales &amp; Profitability" type="button"><img alt="Illustrative Power BI-style Sales &amp; Profitability dashboard with synthetic sample data" loading="lazy" onerror="this.style.display='none';if(!this.parentElement.querySelector('.missing-image')){const m=document.createElement('span');m.className='missing-image';m.textContent='Dashboard screenshot unavailable — upload the matching PNG to the images folder.';this.parentElement.appendChild(m)}" src="images/sales-profitability.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Sales · Financial performance</span><h3>Sales &amp; Profitability</h3><dl><dt>Business question</dt><dd>Which products and regions generate revenue and sustainable profit?</dd><dt>Analytical focus</dt><dd>Compare sales growth, gross margins, product categories, seasonal patterns and regional contribution.</dd><dt>Data &amp; tools</dt><dd>Power BI · DAX · Power Query · Time intelligence</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article><article class="project"><button aria-label="Enlarge: Healthcare Service Performance" class="shot shot-button" data-image="images/healthcare-performance.png" data-title="Healthcare Service Performance" type="button"><img alt="Illustrative Power BI-style Healthcare Service Performance dashboard with synthetic sample data" loading="lazy" onerror="this.style.display='none';if(!this.parentElement.querySelector('.missing-image')){const m=document.createElement('span');m.className='missing-image';m.textContent='Dashboard screenshot unavailable — upload the matching PNG to the images folder.';this.parentElement.appendChild(m)}" src="images/healthcare-performance.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Healthcare · Operations</span><h3>Healthcare Service Performance</h3><dl><dt>Business question</dt><dd>How can patient demand and waiting times be monitored to improve service?</dd><dt>Analytical focus</dt><dd>Track admissions, waiting times, departmental capacity, service targets and patient outcomes.</dd><dt>Data &amp; tools</dt><dd>Power BI · SQL · KPI analysis · Operational reporting</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article><article class="project"><button aria-label="Enlarge: Marketing Campaign Performance" class="shot shot-button" data-image="images/marketing-campaigns.png" data-title="Marketing Campaign Performance" type="button"><img alt="Illustrative Power BI-style Marketing Campaign Performance dashboard with synthetic sample data" loading="lazy" onerror="this.style.display='none';if(!this.parentElement.querySelector('.missing-image')){const m=document.createElement('span');m.className='missing-image';m.textContent='Dashboard screenshot unavailable — upload the matching PNG to the images folder.';this.parentElement.appendChild(m)}" src="images/marketing-campaigns.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Marketing · ROI</span><h3>Marketing Campaign Performance</h3><dl><dt>Business question</dt><dd>Which campaigns and channels deliver the strongest conversion efficiency and return?</dd><dt>Analytical focus</dt><dd>Analyse media spend, conversion trends, CPL and ROAS to support campaign budget decisions.</dd><dt>Data &amp; tools</dt><dd>Power BI · DAX · Channel performance · ROI analysis</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article><article class="project"><button aria-label="Enlarge: Logistics &amp; Supply Chain" class="shot shot-button" data-image="images/logistics-supply-chain.png" data-title="Logistics &amp; Supply Chain" type="button"><img alt="Illustrative Power BI-style Logistics &amp; Supply Chain dashboard with synthetic sample data" loading="lazy" onerror="this.style.display='none';if(!this.parentElement.querySelector('.missing-image')){const m=document.createElement('span');m.className='missing-image';m.textContent='Dashboard screenshot unavailable — upload the matching PNG to the images folder.';this.parentElement.appendChild(m)}" src="images/logistics-supply-chain.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Logistics · Delivery efficiency</span><h3>Logistics &amp; Supply Chain</h3><dl><dt>Business question</dt><dd>Where do shipment delays and fulfilment costs create operational bottlenecks?</dd><dt>Analytical focus</dt><dd>Monitor shipment volume, delivery reliability, carrier performance, transit time and cost drivers.</dd><dt>Data &amp; tools</dt><dd>Power BI · SQL · Supply chain KPIs · Exception reporting</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article></div></section></div>
+</article></div></section><section aria-label="Business Analytics Showcase" class="category-panel" hidden="" id="category-business-showcase"><div class="category-panel-heading"><h3>Business Analytics Showcase</h3><p>Explore five Power BI-style project concepts. Use the arrows to browse each dashboard without scrolling through a long list.</p></div><div aria-label="Business Analytics Showcase dashboard viewer" aria-roledescription="carousel" class="showcase-viewport"><div aria-live="off" class="projects showcase-slides" id="showcase-slides"><article class="project showcase-slide" data-slide="0"><button aria-label="Enlarge: Customer Churn &amp; Retention" class="shot shot-button" data-image="images/customer-churn.png" data-title="Customer Churn &amp; Retention" type="button"><img alt="Illustrative Power BI-style Customer Churn &amp; Retention dashboard with synthetic sample data" loading="lazy" onerror="this.style.display='none';if(!this.parentElement.querySelector('.missing-image')){const m=document.createElement('span');m.className='missing-image';m.textContent='Dashboard screenshot unavailable — upload the matching PNG to the images folder.';this.parentElement.appendChild(m)}" src="images/customer-churn.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Customer analytics · Retention</span><h3>Customer Churn &amp; Retention</h3><dl><dt>Business question</dt><dd>Which customer segments are most likely to churn, and where should retention teams focus?</dd><dt>Analytical focus</dt><dd>Explore churn rates, contract mix, customer tenure and revenue at risk to prioritise retention actions.</dd><dt>Data &amp; tools</dt><dd>Power BI · SQL · DAX · Customer segmentation</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article><article class="project showcase-slide" data-slide="1" hidden=""><button aria-label="Enlarge: Sales &amp; Profitability" class="shot shot-button" data-image="images/sales-profitability.png" data-title="Sales &amp; Profitability" type="button"><img alt="Illustrative Power BI-style Sales &amp; Profitability dashboard with synthetic sample data" loading="lazy" onerror="this.style.display='none';if(!this.parentElement.querySelector('.missing-image')){const m=document.createElement('span');m.className='missing-image';m.textContent='Dashboard screenshot unavailable — upload the matching PNG to the images folder.';this.parentElement.appendChild(m)}" src="images/sales-profitability.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Sales · Financial performance</span><h3>Sales &amp; Profitability</h3><dl><dt>Business question</dt><dd>Which products and regions generate revenue and sustainable profit?</dd><dt>Analytical focus</dt><dd>Compare sales growth, gross margins, product categories, seasonal patterns and regional contribution.</dd><dt>Data &amp; tools</dt><dd>Power BI · DAX · Power Query · Time intelligence</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article><article class="project showcase-slide" data-slide="2" hidden=""><button aria-label="Enlarge: Healthcare Service Performance" class="shot shot-button" data-image="images/healthcare-performance.png" data-title="Healthcare Service Performance" type="button"><img alt="Illustrative Power BI-style Healthcare Service Performance dashboard with synthetic sample data" loading="lazy" onerror="this.style.display='none';if(!this.parentElement.querySelector('.missing-image')){const m=document.createElement('span');m.className='missing-image';m.textContent='Dashboard screenshot unavailable — upload the matching PNG to the images folder.';this.parentElement.appendChild(m)}" src="images/healthcare-performance.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Healthcare · Operations</span><h3>Healthcare Service Performance</h3><dl><dt>Business question</dt><dd>How can patient demand and waiting times be monitored to improve service?</dd><dt>Analytical focus</dt><dd>Track admissions, waiting times, departmental capacity, service targets and patient outcomes.</dd><dt>Data &amp; tools</dt><dd>Power BI · SQL · KPI analysis · Operational reporting</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article><article class="project showcase-slide" data-slide="3" hidden=""><button aria-label="Enlarge: Marketing Campaign Performance" class="shot shot-button" data-image="images/marketing-campaigns.png" data-title="Marketing Campaign Performance" type="button"><img alt="Illustrative Power BI-style Marketing Campaign Performance dashboard with synthetic sample data" loading="lazy" onerror="this.style.display='none';if(!this.parentElement.querySelector('.missing-image')){const m=document.createElement('span');m.className='missing-image';m.textContent='Dashboard screenshot unavailable — upload the matching PNG to the images folder.';this.parentElement.appendChild(m)}" src="images/marketing-campaigns.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Marketing · ROI</span><h3>Marketing Campaign Performance</h3><dl><dt>Business question</dt><dd>Which campaigns and channels deliver the strongest conversion efficiency and return?</dd><dt>Analytical focus</dt><dd>Analyse media spend, conversion trends, CPL and ROAS to support campaign budget decisions.</dd><dt>Data &amp; tools</dt><dd>Power BI · DAX · Channel performance · ROI analysis</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article><article class="project showcase-slide" data-slide="4" hidden=""><button aria-label="Enlarge: Logistics &amp; Supply Chain" class="shot shot-button" data-image="images/logistics-supply-chain.png" data-title="Logistics &amp; Supply Chain" type="button"><img alt="Illustrative Power BI-style Logistics &amp; Supply Chain dashboard with synthetic sample data" loading="lazy" onerror="this.style.display='none';if(!this.parentElement.querySelector('.missing-image')){const m=document.createElement('span');m.className='missing-image';m.textContent='Dashboard screenshot unavailable — upload the matching PNG to the images folder.';this.parentElement.appendChild(m)}" src="images/logistics-supply-chain.png"/><span class="expand-hint">View full image ↗</span></button><div class="body"><span class="eyebrow">Logistics · Delivery efficiency</span><h3>Logistics &amp; Supply Chain</h3><dl><dt>Business question</dt><dd>Where do shipment delays and fulfilment costs create operational bottlenecks?</dd><dt>Analytical focus</dt><dd>Monitor shipment volume, delivery reliability, carrier performance, transit time and cost drivers.</dd><dt>Data &amp; tools</dt><dd>Power BI · SQL · Supply chain KPIs · Exception reporting</dd></dl><p class="sample-note">Portfolio concept recreated with synthetic data. Not an original client report or completed Power BI .pbix file.</p></div></article></div></div><div aria-label="Dashboard browsing controls" class="showcase-controls">
+<button aria-label="Previous dashboard" class="showcase-arrow" id="showcase-prev" type="button">← <span>Previous</span></button>
+<div class="showcase-progress"><span aria-live="polite" id="showcase-count">01 / 05</span><span aria-label="Select a dashboard" class="showcase-dots" id="showcase-dots"></span></div>
+<button aria-label="Next dashboard" class="showcase-arrow" id="showcase-next" type="button"><span>Next</span> →</button>
+</div></section></div>
 <aside aria-labelledby="trends-title" class="trends-sidebar">
 <div class="trends-title-row"><span aria-hidden="true" class="trends-indicator"></span><span class="trend-eyebrow">INDUSTRY WATCH</span></div>
 <h2 id="trends-title">Current Analytics Trends</h2>
@@ -433,11 +562,78 @@ footer .contact-pending { color:#b7c5d5; font-size:.94rem; font-weight:500; bord
 <p class="trends-note">Hand-picked reading, not a live news feed. Article summaries and dates are updated when this portfolio is edited.</p>
 </aside></div></div></section>
 <dialog aria-label="Dashboard preview" class="image-dialog" id="dashboard-dialog"><div class="dialog-header"><strong id="dialog-title">Dashboard preview</strong><button aria-label="Close dashboard preview" id="dialog-close" type="button">Close ×</button></div><img alt="Enlarged portfolio dashboard preview" id="dialog-image" src=""/><p>Illustrative design with sample data — not a real client dashboard.</p></dialog>
+<section class="career-section" id="career">
+<div class="wrap career-wrap">
+<div class="career-heading"><div><span class="career-kicker">PROFESSIONAL EXPERIENCE</span><h2>Career Journey &amp; Impact</h2><p class="intro">Explore my experience across data analytics and business analysis. Select an organisation to see key achievements and tools.</p></div><span aria-hidden="true" class="career-heading-mark">▥</span></div>
+<div aria-label="Career highlights" class="career-stats">
+<div class="career-stat"><strong>5+</strong><span>Years of experience</span></div>
+<div class="career-stat"><strong>45+</strong><span>Dashboards developed</span></div>
+<div class="career-stat"><strong>8</strong><span>Enterprise clients supported</span></div>
+</div>
+<div class="career-explorer">
+<div aria-label="Choose an organisation" class="career-role-list" role="group"><p class="career-list-label">SELECT AN EXPERIENCE</p><div id="career-options"></div></div>
+<article aria-atomic="true" aria-live="polite" class="career-details" id="career-details">
+<div class="career-details-top"><span class="career-details-kicker">EXPERIENCE DETAILS</span><span id="career-date"></span></div>
+<h3 id="career-title"></h3><p class="career-company" id="career-company"></p>
+<div class="career-detail-block"><h4>Key contribution</h4><p id="career-achievement"></p></div>
+<div class="career-detail-block"><h4>Tools &amp; capabilities</h4><div class="career-tool-tags" id="career-tools"></div></div>
+</article>
+</div>
+</div>
+</section>
+<section id="achievements" class="achievements-section" aria-labelledby="achievements-title">
+  <div class="wrap">
+    <span class="achievement-eyebrow">MILESTONES &amp; RECOGNITION</span>
+    <h2 id="achievements-title">Achievements &amp; Recognition</h2>
+    <p class="intro achievements-intro">Selected examples of innovation, successful delivery and measurable business impact throughout my career.</p>
+    <div class="achievement-grid">
+      <article class="achievement-card">
+        <div class="achievement-head"><span class="achievement-symbol" aria-hidden="true">✦</span><span class="achievement-tag">ANALYTICS INNOVATION</span></div>
+        <h3>Tableau Dashboard Review Automation</h3>
+        <p>Designed an AI prompt to review Tableau dashboard XML files, examine calculations and KPIs, and highlight strengths and areas for improvement. Following its successful adoption, the approach became part of regular workflows across multiple teams.</p>
+        <div class="achievement-footer"><span>AI-assisted analysis</span><span>Tableau XML</span><span>Cross-team adoption</span></div>
+      </article>
+      <article class="achievement-card">
+        <div class="achievement-head"><span class="achievement-symbol" aria-hidden="true">★</span><span class="achievement-tag">AWARD · KINESSO</span></div>
+        <h3>Golden Impulse Award</h3>
+        <p>Received the Golden Impulse Award at Kinesso for successfully transitioning more than 20 SSRS reports into Power BI dashboards, supporting the modernisation of business reporting.</p>
+        <div class="achievement-metric">20+ <small>reports transitioned</small></div>
+        <div class="achievement-footer"><span>SSRS</span><span>Power BI</span><span>Reporting modernisation</span></div>
+      </article>
+      <article class="achievement-card">
+        <div class="achievement-head"><span class="achievement-symbol" aria-hidden="true">↗</span><span class="achievement-tag">PROCESS IMPROVEMENT · GEP</span></div>
+        <h3>Ideas Delivering Capacity Savings</h3>
+        <p>Submitted two process improvement ideas at GEP that led to more than 2,000 hours of capacity savings and earned positive recognition from senior leadership.</p>
+        <div class="achievement-metric">2,000+ <small>hours of capacity savings</small></div>
+        <div class="achievement-footer"><span>Continuous improvement</span><span>Efficiency</span><span>Leadership recognition</span></div>
+      </article>
+    </div>
+  </div>
+</section>
 <section id="skills"><div class="wrap"><div class="skills-heading"><h2>Technical Skills &amp; Business Expertise</h2><p>Bridging data, technology and business requirements to deliver measurable insights and better decisions.</p></div><div class="skills"><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">◫</span><h3>Data Visualisation &amp; BI</h3></div><ul class="skill-tags"><li>Power BI</li><li>Tableau</li><li>DAX</li><li>Power Query</li><li>Data Modelling</li><li>Dashboard Design</li><li>KPI Reporting</li><li>Datorama</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">⌘</span><h3>Data Analytics &amp; Programming</h3></div><ul class="skill-tags"><li>SQL</li><li>Azure SQL</li><li>Python</li><li>Advanced Excel</li><li>Pandas</li><li>NumPy</li><li>Data Cleaning</li><li>Exploratory Data Analysis</li><li>Alteryx</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">∿</span><h3>Statistical &amp; Predictive Analytics</h3></div><ul class="skill-tags"><li>Regression Analysis</li><li>Predictive Modelling</li><li>Statistical Analysis</li><li>Trend Analysis</li><li>Forecasting</li><li>Data Validation</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">≡</span><h3>Business Analysis</h3></div><ul class="skill-tags"><li>Requirements Gathering</li><li>BRDs &amp; FRDs</li><li>User Stories</li><li>Acceptance Criteria</li><li>Gap Analysis</li><li>Process Mapping</li><li>UAT</li><li>Process Improvement</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">↗</span><h3>Data Engineering &amp; Automation</h3></div><ul class="skill-tags"><li>Microsoft Fabric</li><li>Power Automate</li><li>ETL &amp; Data Transformation</li><li>Data Integration</li><li>Power Query</li><li>Reporting Automation</li><li>Data Quality Checks</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">◎</span><h3>Project Delivery &amp; Collaboration</h3></div><ul class="skill-tags"><li>Agile &amp; Scrum</li><li>JIRA</li><li>Azure DevOps</li><li>Stakeholder Management</li><li>Workshop Facilitation</li><li>Cross-functional Collaboration</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">◇</span><h3>Industry &amp; Domain Expertise</h3></div><ul class="skill-tags"><li>Banking &amp; Financial Services</li><li>Insurance Analytics</li><li>Procurement</li><li>Workforce Management</li><li>Operations Analytics</li><li>Sustainability Analytics</li></ul></article><article class="skill-card"><div class="skill-card-header"><span aria-hidden="true" class="skill-icon">★</span><h3>Certifications &amp; Education</h3></div><ul class="skill-tags"><li>Microsoft PL-300 (2026)</li><li>Microsoft AZ-900 (2026)</li><li>MSc Business Analytics — in progress</li></ul></article></div><p class="skills-note">A combination of hands-on tools, analytical methods and business delivery capabilities.</p></div></section>
-<section id="approach"><div class="wrap"><h2>How I approach an analysis</h2><div class="approach"><div><h3>Start with the decision</h3><p>I ask what someone will do differently after seeing the numbers, then work backwards to the data and the chart.</p></div><div><h3>Check the data first</h3><p>Before building anything, I look for gaps, duplicates and definitions that don't match, because a polished dashboard on bad data misleads.</p></div><div><h3>Say it plainly</h3><p>Every dashboard I build leads with its main finding in a sentence, with the detail one click below.</p></div></div></div></section>
-<footer id="contact"><div class="wrap"><h2>Let's talk</h2><p>I'm based in London and open to analyst roles and contract work.</p><div class="links">
-  &lt;!-- TODO: Replace placeholder contact labels with real LinkedIn URL and email address before applying for roles. --&gt;
-<a href="https://github.com/jagruti-analytics">GitHub</a><span class="contact-pending">LinkedIn — profile link to add</span><span class="contact-pending">Email — address to add</span></div></div></footer>
+<footer id="contact" class="connect-section" aria-labelledby="connect-title">
+  <div class="wrap connect-wrap">
+    <div class="connect-availability"><span class="connect-status-dot" aria-hidden="true"></span> OPEN TO NEW OPPORTUNITIES</div>
+    <h2 id="connect-title">Let’s Connect</h2>
+    <p class="connect-intro">I'm open to opportunities in Data Analytics, Business Analysis and Business Intelligence. Let's connect and explore how I can contribute to your team's success.</p>
+    <p class="connect-location"><span aria-hidden="true">⌖</span> Based in London, United Kingdom</p>
+    <div class="connect-cards">
+      <a class="connect-card" href="mailto:jagruti.s2022@gmail.com" aria-label="Send an email to jagruti.s2022@gmail.com">
+        <span class="connect-icon" aria-hidden="true">✉</span>
+        <strong>Email Me</strong>
+        <span class="connect-detail">jagruti.s2022@gmail.com</span>
+        <span class="connect-action">Send email <span aria-hidden="true">↗</span></span>
+      </a>
+      <a class="connect-card" href="https://www.linkedin.com/in/jagruti-shete/" target="_blank" rel="noopener noreferrer" aria-label="Open Jagruti Shete's LinkedIn profile in a new tab">
+        <span class="connect-icon connect-icon-linkedin" aria-hidden="true">in</span>
+        <strong>LinkedIn</strong>
+        <span class="connect-detail">Jagruti Shete</span>
+        <span class="connect-action">View profile <span aria-hidden="true">↗</span></span>
+      </a>
+    </div>
+    <p class="connect-signoff">Jagruti Shete <span aria-hidden="true">·</span> Data Analyst &amp; Business Analyst</p>
+  </div>
+</footer>
 <script>
 // Professional work only. Education remains in Certifications & Education.
 const careerRoles = [
@@ -516,5 +712,46 @@ categoryButtons.forEach(button => {
     });
   });
 });
-</script></body>
+</script>
+<script>
+// Business Analytics Showcase: one dashboard at a time, controlled by arrows or dots.
+(() => {
+  const section = document.getElementById('category-business-showcase');
+  if (!section) return;
+  const slides = Array.from(section.querySelectorAll('.showcase-slide'));
+  const previous = document.getElementById('showcase-prev');
+  const next = document.getElementById('showcase-next');
+  const count = document.getElementById('showcase-count');
+  const dots = document.getElementById('showcase-dots');
+  if (!slides.length || !previous || !next || !count || !dots) return;
+  let activeIndex = 0;
+  const buttons = slides.map((slide, index) => {
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = 'showcase-dot';
+    dot.setAttribute('aria-label', 'Show dashboard ' + (index + 1) + ': ' + (slide.querySelector('h3')?.textContent || ''));
+    dot.addEventListener('click', () => display(index));
+    dots.appendChild(dot);
+    return dot;
+  });
+  function display(index) {
+    activeIndex = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => { slide.hidden = i !== activeIndex; });
+    buttons.forEach((dot, i) => {
+      const isActive = i === activeIndex;
+      dot.classList.toggle('is-active', isActive);
+      dot.setAttribute('aria-pressed', String(isActive));
+    });
+    count.textContent = String(activeIndex + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0');
+  }
+  previous.addEventListener('click', () => display(activeIndex - 1));
+  next.addEventListener('click', () => display(activeIndex + 1));
+  section.addEventListener('keydown', event => {
+    if (event.target.closest('.showcase-controls') && event.key === 'ArrowLeft') {event.preventDefault(); display(activeIndex - 1);}
+    if (event.target.closest('.showcase-controls') && event.key === 'ArrowRight') {event.preventDefault(); display(activeIndex + 1);}
+  });
+  display(0);
+})();
+</script>
+</body>
 </html>
