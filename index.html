@@ -233,6 +233,45 @@ html{scroll-padding-top:105px}
   .site-nav .nav-center { gap: 12px; }
   .site-nav .nav-center a { font-size: 13px; }
 }
+
+/* Career experience explorer — replaces the older date-bar timeline */
+#career .career-wrap {max-width:1170px}
+.career-heading {display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1.35rem}
+.career-kicker,.career-list-label,.career-details-kicker {color:#75e2d5;font-weight:700;letter-spacing:.11em;font-size:.72rem}
+.career-heading h2 {font-size:clamp(2rem,4vw,2.65rem);margin:.45rem 0 .65rem}
+.career-heading .intro {margin:0;max-width:65ch}
+.career-heading-mark {color:#6ee7dc;border:1px solid #3b6573;background:#1d3d4d;border-radius:12px;width:52px;height:52px;display:grid;place-items:center;font-size:1.75rem}
+.career-stats {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.4rem 0}
+.career-stat {background:linear-gradient(145deg,#21374b,#1c3043);border:1px solid #3b5369;border-radius:12px;padding:1.15rem 1.4rem;display:flex;flex-direction:column;gap:.3rem}
+.career-stat strong {color:#5eead4;font-family:var(--head);font-size:clamp(1.75rem,3vw,2.25rem);line-height:1.1}
+.career-stat span {color:#b7c5d5;font-size:.88rem}
+.career-explorer {display:grid;grid-template-columns:minmax(0, .95fr) minmax(0,1.15fr);gap:1.2rem;align-items:start}
+.career-role-list,.career-details {background:#1e3043;border:1px solid #3a5266;border-radius:14px;padding:1.3rem;min-width:0}
+.career-list-label {margin:0 0 .9rem}
+#career-options {display:grid;gap:.7rem}
+.career-choice {width:100%;display:flex;align-items:center;gap:.8rem;cursor:pointer;text-align:left;color:#e9f2f8;background:#243a4e;border:1px solid #42596c;border-radius:10px;padding:.92rem .85rem;font:inherit;transition:background .18s,border-color .18s,transform .18s}
+.career-choice:hover {background:#2c4559;border-color:#64b7b0}
+.career-choice.active {background:#17464d;border-color:#5eead4;box-shadow:inset 0 0 0 1px #5eead422}
+.career-choice-marker {width:5px;min-height:42px;align-self:stretch;background:#0e7c86;border-radius:6px;flex-shrink:0}
+.career-choice-content {flex:1;min-width:0;display:flex;flex-direction:column;gap:.08rem}
+.career-choice-content strong {font-size:1rem}
+.career-choice-content small {color:#b7c5d5;font-size:.8rem;line-height:1.4}
+.career-choice-content .career-choice-dates {color:#86ddd4;margin-top:.2rem}
+.career-choice-arrow {font-size:1.3rem;color:#77e8db}
+.career-details {padding:1.7rem;min-height:365px;background:linear-gradient(145deg,#243b4f,#1d3042)}
+.career-details-top {display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
+#career-date {color:#bdd2df;font-size:.83rem}
+.career-details h3 {font-size:clamp(1.55rem,2.4vw,2rem);margin:1.2rem 0 .15rem;color:#fff}
+.career-company {color:#70dbd2;font-weight:600;margin:.1rem 0 1.4rem}
+.career-detail-block {border-top:1px solid #40576d;padding-top:1rem;margin-top:1rem}
+.career-detail-block h4 {font-size:.79rem;letter-spacing:.065em;text-transform:uppercase;color:#b7d6e1;margin:0 0 .65rem}
+.career-detail-block p {margin:0;color:#e4edf5;font-size:.94rem;line-height:1.7}
+.career-tool-tags {display:flex;gap:.5rem;flex-wrap:wrap}
+.career-tool-tags span {color:#dcecf4;background:#304b5e;border:1px solid #46677a;border-radius:6px;padding:.3rem .6rem;font-size:.82rem}
+@media(max-width:800px){.career-explorer{grid-template-columns:1fr}.career-details{min-height:0}}
+@media(max-width:560px){.career-stats{grid-template-columns:1fr}.career-stat{padding:1rem 1.2rem}.career-heading-mark{display:none}.career-role-list,.career-details{padding:1rem}}
+@media(prefers-reduced-motion:reduce){.career-choice{transition:none}}
+
 </style>
 </head>
 <body id="top">
@@ -255,7 +294,25 @@ html{scroll-padding-top:105px}
 <header class="hero"><div class="wrap"><div class="hero-grid"><div><h1>Turning data into insights. Turning insights into business decisions.</h1><p class="lead">I'm Jagruti, a London-based Data Analyst and Business Analyst with 5+ years of experience transforming complex data and business requirements into actionable insights. I specialise in Power BI, SQL reporting, stakeholder engagement and requirements analysis, with experience across banking, financial services, insurance, procurement and operations. I'm currently pursuing an MSc in Business Analytics.</p><p class="proof">Microsoft Certified: Power BI Data Analyst Associate (PL-300) | 45+ dashboards developed across BFSI, workforce management, procurement and operations | 8 enterprise procurement clients supported.</p><div class="actions"><a class="btn primary" href="#projects">See my dashboards</a><a class="btn ghost" href="#contact">Get in touch</a></div></div>
 <!-- Professional portrait uploaded to GitHub images folder -->
 <img alt="Jagruti Shete – Data Analyst and Business Analyst" class="portrait" decoding="async" loading="eager" src="images/Polished%20Analytics%20Professional%20Portrait.png"/></div></div></header>
-<section id="career"><div class="wrap"><h2>My career, charted</h2><p class="intro">Each bar is a role or course of study, drawn to scale. Hover over a bar to see the dates. Latest start dates appear first.</p><div aria-label="Career timeline with the latest roles listed first" class="chart"><div aria-hidden="true" class="axis" id="axis"></div><div id="rows"></div></div></div></section>
+<section id="career" class="career-section">
+  <div class="wrap career-wrap">
+    <div class="career-heading"><div><span class="career-kicker">PROFESSIONAL EXPERIENCE</span><h2>My Career, Analysed</h2><p class="intro">Explore my experience across data analytics and business analysis. Select an organisation to see key achievements and tools.</p></div><span class="career-heading-mark" aria-hidden="true">▥</span></div>
+    <div class="career-stats" aria-label="Career highlights">
+      <div class="career-stat"><strong>5+</strong><span>Years of experience</span></div>
+      <div class="career-stat"><strong>45+</strong><span>Dashboards developed</span></div>
+      <div class="career-stat"><strong>8</strong><span>Enterprise clients supported</span></div>
+    </div>
+    <div class="career-explorer">
+      <div class="career-role-list" role="group" aria-label="Choose an organisation"><p class="career-list-label">SELECT AN EXPERIENCE</p><div id="career-options"></div></div>
+      <article id="career-details" class="career-details" aria-live="polite" aria-atomic="true">
+        <div class="career-details-top"><span class="career-details-kicker">EXPERIENCE DETAILS</span><span id="career-date"></span></div>
+        <h3 id="career-title"></h3><p id="career-company" class="career-company"></p>
+        <div class="career-detail-block"><h4>Key contribution</h4><p id="career-achievement"></p></div>
+        <div class="career-detail-block"><h4>Tools &amp; capabilities</h4><div id="career-tools" class="career-tool-tags"></div></div>
+      </article>
+    </div>
+  </div>
+</section>
 <section id="projects"><div class="wrap"><div class="portfolio-workspace"><div class="portfolio-left"><h2>Dashboards and analysis</h2><p class="intro">Explore six dashboard projects by analytics area. Select a category to see its dashboard previews and project details.</p><p class="portfolio-disclaimer"><strong>Portfolio note:</strong> The dashboard images below are visual recreations using illustrative data, not screenshots of confidential client reports. They show example layouts and analytical approaches; the figures are not validated research findings.</p><div aria-label="Dashboard categories" class="category-tiles" role="group"><button aria-controls="category-sustainability" aria-expanded="true" class="category-tile is-selected" data-category="sustainability" type="button"><span aria-hidden="true" class="category-tile-icon">◈</span><span class="category-tile-content"><strong>Sustainability &amp; Public Sector</strong><span class="category-tile-description">Agricultural waste and UK procurement opportunities</span><span class="category-tile-count">02 projects</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-workforce" aria-expanded="false" class="category-tile" data-category="workforce" type="button"><span aria-hidden="true" class="category-tile-icon">▥</span><span class="category-tile-content"><strong>Workforce &amp; Operations</strong><span class="category-tile-description">People analytics and operational efficiency</span><span class="category-tile-count">02 projects</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-procurement" aria-expanded="false" class="category-tile" data-category="procurement" type="button"><span aria-hidden="true" class="category-tile-icon">▤</span><span class="category-tile-content"><strong>Procurement Analytics</strong><span class="category-tile-description">Spend, suppliers and contract performance</span><span class="category-tile-count">01 project</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button><button aria-controls="category-bfsi" aria-expanded="false" class="category-tile" data-category="bfsi" type="button"><span aria-hidden="true" class="category-tile-icon">◉</span><span class="category-tile-content"><strong>BFSI Analytics</strong><span class="category-tile-description">Banking, financial services and insurance insights</span><span class="category-tile-count">01 project</span></span><span aria-hidden="true" class="category-tile-arrow">↗</span></button></div><section aria-label="Sustainability &amp; Public Sector" class="category-panel" id="category-sustainability"><div class="category-panel-heading"><h3>Sustainability &amp; Public Sector</h3><p>Select a screenshot to view the full-size dashboard.</p></div><div class="projects"><article class="project">
 <button aria-label="View larger image: Agricultural waste &amp; sustainability analytics" class="shot shot-button" data-image="images/agricultural-waste.png" data-title="Agricultural waste &amp; sustainability analytics" type="button">
 <img alt="Illustrative Agricultural waste &amp; sustainability analytics dashboard design with sample figures" loading="lazy" src="images/agricultural-waste.png"/>
@@ -366,32 +423,49 @@ html{scroll-padding-top:105px}
 <section id="approach"><div class="wrap"><h2>How I approach an analysis</h2><div class="approach"><div><h3>Start with the decision</h3><p>I ask what someone will do differently after seeing the numbers, then work backwards to the data and the chart.</p></div><div><h3>Check the data first</h3><p>Before building anything, I look for gaps, duplicates and definitions that don't match, because a polished dashboard on bad data misleads.</p></div><div><h3>Say it plainly</h3><p>Every dashboard I build leads with its main finding in a sentence, with the detail one click below.</p></div></div></div></section>
 <footer id="contact"><div class="wrap"><h2>Let's talk</h2><p>I'm based in London and open to analyst roles and contract work.</p><div class="links"><!-- Replace placeholder links with your own --><a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">LinkedIn</a><a href="https://github.com/jagruti-analytics">GitHub</a><a href="mailto:you@example.com">Email</a></div></div></footer>
 <script>
-// Edit your career entries below; newest START DATE is displayed first.
-const roles=[
-{org:"Axis Bank",title:"Assistant Manager",start:"2019-12",end:"2020-07",type:"earlier",tools:"Excel (pivot tables, charts)",did:"Prepared operational, financial and performance reports, and tracked sales and service metrics."},
-{org:"Kinesso India",title:"Business / Data Analyst",start:"2021-01",end:"2022-11",type:"work",tools:"Power BI, DAX, Power Query, SQL, Datorama",did:"Built and maintained 12+ Power BI dashboards for banking and insurance clients, cutting weekly reporting time by 35%, and cut reporting errors by 40% through validation checks."},
-{org:"GEP Worldwide",title:"Business Analyst",start:"2022-11",end:"2025-12",type:"work",tools:"SQL, Excel, JIRA, Azure DevOps",did:"Led business analysis for procurement implementations across 8 enterprise clients, ran workshops with 40+ stakeholders, and resolved 120+ defects before release. Cut report turnaround time by 25%."},
-{org:"29 Acacia",title:"Data Analytics Intern",start:"2026-03",end:"2026-06",type:"work",tools:"Power BI",did:"Built 6 Power BI dashboards used by 15+ stakeholders and cut manual data preparation by 30%."},
-{org:"University of Greenwich",title:"MSc Business Analytics",start:"2026-01",end:"2027-01",type:"study",tools:"Expected 2027",did:""}
-];
-const rangeStart=2019,rangeEnd=2027,totalMonths=(rangeEnd-rangeStart)*12;
-const toMonths=s=>{const[y,m]=s.split("-").map(Number);return(y-rangeStart)*12+(m-1)};
-const fmt=s=>new Date(s+"-01").toLocaleDateString("en-GB",{month:"short",year:"numeric"});
-const axis=document.getElementById("axis");
-for(let y=rangeStart;y<=rangeEnd;y++){const s=document.createElement("span");s.textContent=y;s.style.left=((y-rangeStart)/(rangeEnd-rangeStart)*100)+"%";axis.appendChild(s)}
-const rows=document.getElementById("rows");
-roles.sort((a,b)=>b.start.localeCompare(a.start)).forEach((r,i)=>{
-const left=toMonths(r.start)/totalMonths*100;
-const width=(toMonths(r.end)-toMonths(r.start))/totalMonths*100;
-const row=document.createElement("div");row.className="row";
-row.innerHTML='<div class="meta"><b></b><span></span></div><div class="track"><div class="bar '+r.type+'"></div></div>'+(r.tools?'<p class="tools"></p>':'')+(r.did?'<p class="did"></p>':'');
-row.querySelector("b").textContent=r.title+", "+r.org;
-row.querySelector(".meta span").textContent=fmt(r.start)+" to "+fmt(r.end);
-const bar=row.querySelector(".bar");bar.style.left=left+"%";bar.style.width=width+"%";bar.style.animationDelay=i*.15+"s";bar.title=r.org+": "+fmt(r.start)+" to "+fmt(r.end);
-if(r.tools)row.querySelector(".tools").textContent=r.tools;
-if(r.did)row.querySelector(".did").textContent=r.did;
-rows.appendChild(row);
+// Professional work only. Education remains in Certifications & Education.
+const careerRoles = [
+  {org:"29 Acacia",title:"Data Analytics Intern",start:"2026-03",end:"2026-06",tools:"Power BI",did:"Built 6 Power BI dashboards used by 15+ stakeholders and cut manual data preparation by 30%."},
+  {org:"GEP Worldwide",title:"Business Analyst",start:"2022-11",end:"2025-12",tools:"SQL, Excel, JIRA, Azure DevOps",did:"Led business analysis for procurement implementations across 8 enterprise clients, ran workshops with 40+ stakeholders, and resolved 120+ defects before release. Cut report turnaround time by 25%."},
+  {org:"Kinesso India",title:"Business / Data Analyst",start:"2021-01",end:"2022-11",tools:"Power BI, DAX, Power Query, SQL, Datorama",did:"Built and maintained 12+ Power BI dashboards for banking and insurance clients, cutting weekly reporting time by 35%, and cut reporting errors by 40% through validation checks."},
+  {org:"Axis Bank",title:"Assistant Manager",start:"2019-12",end:"2020-07",tools:"Excel (pivot tables, charts)",did:"Prepared operational, financial and performance reports, and tracked sales and service metrics."}
+].sort((a,b)=>b.start.localeCompare(a.start));
+const careerOptions=document.getElementById('career-options');
+const careerDate=document.getElementById('career-date');
+const careerTitle=document.getElementById('career-title');
+const careerCompany=document.getElementById('career-company');
+const careerAchievement=document.getElementById('career-achievement');
+const careerTools=document.getElementById('career-tools');
+const careerFormat=s=>new Date(s+'-01T00:00:00').toLocaleDateString('en-GB',{month:'short',year:'numeric'});
+function showCareer(index){
+  const selected=careerRoles[index];
+  careerDate.textContent=careerFormat(selected.start)+' – '+careerFormat(selected.end);
+  careerTitle.textContent=selected.title;
+  careerCompany.textContent=selected.org;
+  careerAchievement.textContent=selected.did;
+  careerTools.replaceChildren();
+  selected.tools.split(',').map(s=>s.trim()).filter(Boolean).forEach(skill=>{
+    const tag=document.createElement('span');tag.textContent=skill;careerTools.appendChild(tag);
+  });
+  careerOptions.querySelectorAll('.career-choice').forEach((button,i)=>{
+    const active=i===index;
+    button.classList.toggle('active',active);
+    button.setAttribute('aria-pressed',String(active));
+    button.querySelector('.career-choice-arrow').textContent=active?'↓':'→';
+  });
+}
+careerRoles.forEach((role,index)=>{
+  const btn=document.createElement('button');btn.type='button';btn.className='career-choice';btn.setAttribute('aria-label','View experience at '+role.org);
+  const marker=document.createElement('span');marker.className='career-choice-marker';marker.setAttribute('aria-hidden','true');
+  const content=document.createElement('span');content.className='career-choice-content';
+  const org=document.createElement('strong');org.textContent=role.org;
+  const title=document.createElement('small');title.textContent=role.title;
+  const dates=document.createElement('small');dates.className='career-choice-dates';dates.textContent=careerFormat(role.start)+' – '+careerFormat(role.end);
+  content.append(org,title,dates);
+  const arrow=document.createElement('span');arrow.className='career-choice-arrow';arrow.setAttribute('aria-hidden','true');arrow.textContent='→';
+  btn.append(marker,content,arrow);btn.addEventListener('click',()=>showCareer(index));careerOptions.appendChild(btn);
 });
+showCareer(0);
 </script>
 <script>
 // Click screenshots to view their full resolution; Esc or backdrop closes dialog.
