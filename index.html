@@ -139,10 +139,51 @@ footer { background: #142131; border-top-color: var(--line); }
 #skills .skills-note{color:var(--muted);font-size:.85rem;margin:1.25rem 0 0}
 @media(max-width:680px){#skills .skills{grid-template-columns:1fr}#skills .skill-card{padding:1.2rem}}
 @media(prefers-reduced-motion:reduce){#skills .skill-card{transition:none}#skills .skill-card:hover{transform:none}}
+
+/* Premium sticky analytics header */
+.site-nav{position:sticky;top:0;z-index:30;background:linear-gradient(180deg,rgba(10,20,35,.97),rgba(16,31,49,.96));border-bottom:1px solid rgba(114,220,209,.2);box-shadow:0 9px 30px rgba(0,0,0,.17);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.site-nav::after{content:"";display:block;height:2px;background:linear-gradient(90deg,transparent,#2dd4bf,#3b82f6,transparent);opacity:.7}
+.site-nav .nav-shell{max-width:1500px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.1rem;padding: .85rem 1.5rem}
+.site-nav .nav-brand{display:flex;align-items:center;gap:.75rem;min-width:0;text-decoration:none;flex-shrink:0}
+.site-nav .brand-mark{width:42px;height:42px;flex-shrink:0;border-radius:10px;display:flex;align-items:flex-end;justify-content:center;gap:4px;padding:8px;background:linear-gradient(180deg,rgba(45,212,191,.18),rgba(59,130,246,.14));border:1px solid rgba(114,220,209,.25)}
+.site-nav .brand-mark span{display:block;width:6px;border-radius:5px;background:linear-gradient(180deg,#5eead4,#3b82f6)}
+.site-nav .brand-mark span:nth-child(1){height:12px}.site-nav .brand-mark span:nth-child(2){height:18px}.site-nav .brand-mark span:nth-child(3){height:26px}
+.site-nav .brand-copy{display:flex;flex-direction:column;line-height:1.15}
+.site-nav .brand-copy strong{font-family:var(--head);font-size:1.02rem;color:#fff;letter-spacing:-.01em}
+.site-nav .brand-copy small{color:#a4b9ca;font-size:.76rem;margin-top:.2rem;white-space:nowrap}
+.site-nav .nav-center{display:flex;align-items:center;justify-content:center;gap:1.2rem;flex-wrap:wrap}
+.site-nav .nav-center a{position:relative;color:#d9e6f2;text-decoration:none;font-size:.89rem;font-weight:600;padding:.4rem .1rem;white-space:nowrap;transition:color .2s ease}
+.site-nav .nav-center a::after{content:"";position:absolute;left:0;bottom:-3px;width:0;height:2px;background:linear-gradient(90deg,#2dd4bf,#3b82f6);transition:width .2s ease}
+.site-nav .nav-center a:hover,.site-nav .nav-center a:focus-visible{color:white}
+.site-nav .nav-center a:hover::after,.site-nav .nav-center a:focus-visible::after{width:100%}
+.site-nav .nav-right{display:flex;align-items:center;justify-content:flex-end;gap:.7rem;flex-wrap:wrap}
+.site-nav .nav-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.38rem .7rem;border-radius:999px;background:rgba(45,212,191,.10);border:1px solid rgba(45,212,191,.25);color:#baf7f0;font-size:.75rem;font-weight:700;white-space:nowrap}
+.site-nav .badge-dot{width:8px;height:8px;border-radius:50%;background:#2dd4bf;box-shadow:0 0 10px rgba(45,212,191,.7)}
+.site-nav .nav-cta{display:inline-flex;align-items:center;justify-content:center;gap:.3rem;padding:.56rem .9rem;border-radius:9px;text-decoration:none;font-weight:700;font-size:.83rem;color:#071827;background:linear-gradient(135deg,#2dd4bf,#5eead4);box-shadow:0 8px 18px rgba(45,212,191,.14);white-space:nowrap;transition:transform .18s ease,box-shadow .18s ease}
+.site-nav .nav-cta:hover{color:#071827;transform:translateY(-1px);box-shadow:0 10px 23px rgba(45,212,191,.24)}
+html{scroll-padding-top:105px}
+@media(max-width:1120px){.site-nav .nav-shell{justify-content:center}.site-nav .nav-brand{margin-right:auto}.site-nav .nav-center{order:3;width:100%;gap:1.35rem}.site-nav .nav-right{margin-left:auto}html{scroll-padding-top:160px}}
+@media(max-width:650px){.site-nav .nav-shell{padding:.65rem 1rem;gap:.7rem;justify-content:flex-start}.site-nav .nav-brand{width:100%}.site-nav .nav-center{order:2;width:100%;justify-content:flex-start;gap:.8rem 1rem}.site-nav .nav-center a{font-size:.78rem}.site-nav .nav-right{order:3;margin:0;justify-content:flex-start;width:100%}.site-nav .nav-badge{font-size:.7rem}.site-nav .nav-cta{font-size:.77rem}.site-nav .brand-copy small{white-space:normal}html{scroll-padding-top:210px}}
+@media(prefers-reduced-motion:reduce){.site-nav .nav-center a,.site-nav .nav-center a::after,.site-nav .nav-cta{transition:none}}
+
 </style>
 </head>
-<body>
-<nav aria-label="Main"><div class="wrap"><strong>Jagruti Shete | Data Analyst &amp; Business Analyst</strong><ul><li><a href="#career">Career</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#approach">Approach</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<body id="top">
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="wrap nav-shell">
+    <a class="nav-brand" href="#top" aria-label="Jagruti Shete — back to top">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="brand-copy"><strong>Jagruti Shete</strong><small>Data Analyst &amp; Business Analyst</small></span>
+    </a>
+    <div class="nav-center">
+      <a href="#career">Career</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <span class="nav-badge"><span class="badge-dot" aria-hidden="true"></span>Open to UK Analyst Roles</span>
+      <a class="nav-cta" href="#projects">View Dashboards <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</nav>
 <header class="hero"><div class="wrap"><div class="hero-grid"><div><h1>Turning data into insights. Turning insights into business decisions.</h1><p class="lead">I'm Jagruti, a London-based Data Analyst and Business Analyst with 5+ years of experience transforming complex data and business requirements into actionable insights. I specialise in Power BI, SQL reporting, stakeholder engagement and requirements analysis, with experience across banking, financial services, insurance, procurement and operations. I'm currently pursuing an MSc in Business Analytics.</p><p class="proof">Microsoft Certified: Power BI Data Analyst Associate (PL-300) | 45+ dashboards developed across BFSI, workforce management, procurement and operations | 8 enterprise procurement clients supported.</p><div class="actions"><a class="btn primary" href="#projects">See my dashboards</a><a class="btn ghost" href="#contact">Get in touch</a></div></div>
 <!-- Professional portrait uploaded to GitHub images folder -->
 <img alt="Jagruti Shete – Data Analyst and Business Analyst" class="portrait" decoding="async" loading="eager" src="images/Polished%20Analytics%20Professional%20Portrait.png"/></div></div></header>
